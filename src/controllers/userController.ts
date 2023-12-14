@@ -30,11 +30,7 @@ export const createUser = catchAsync(
       : moment().tz("UTC").toDate();
 
     const newUser = await User.create({
-      role: req.body.role,
-      name: req.body.name,
-      email: req.body.email,
-      password: req.body.password,
-      passwordConfirm: req.body.passwordConfirm,
+      ...req.body,
       passwordChangedAt: passwordChangedAt,
     });
 

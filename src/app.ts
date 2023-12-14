@@ -5,6 +5,7 @@ import morgan from "morgan";
 import AppError from "./utils/appError";
 import globalErrorHandler from "./utils/globalErrorHandle";
 import userRouter from "./routes/userRoutes";
+import productRouter from "./routes/productRoutes";
 import ExpressMongoSanitize from "express-mongo-sanitize";
 import { logger } from "./logger/winstonLogger";
 
@@ -34,11 +35,11 @@ app.use(
 );
 
 // ROUTES
+app.use("/api/v1/products", productRouter);
 app.use("/api/v1/users", userRouter);
 
 // ERROR ROUTES
 app.all("*", (req: Request, _res: Response, next: NextFunction) => {
-  logger.error("Can't find this requested route: " + req.originalUrl);
   next(new AppError(`Can't find ${req.originalUrl} on this server!`, 404));
 });
 
