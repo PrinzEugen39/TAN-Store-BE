@@ -15,6 +15,12 @@
     "indent": ["error", 2],
     "linebreak-style": ["error", "windows"],
     "quotes": ["error", "double"],
-    "semi": ["error", "always"]
+    "semi": ["error", "always"],
+    "no-unused-vars": [
+      "error",
+      { "argsIgnorePattern": "req|res|next|val|err" }
+    ],
+    "@typescript-eslint/no-unused-vars": "off",
+    "no-console": "warn"
   }
 }

@@ -6,9 +6,11 @@ import AppError from "./utils/appError";
 import globalErrorHandler from "./utils/globalErrorHandle";
 import userRouter from "./routes/userRoutes";
 import ExpressMongoSanitize from "express-mongo-sanitize";
+import { logger } from "./logger/winstonLogger";
 
 const app = express();
 
+// GLOBAL MIDDLEWARE
 app.use(helmet());
 
 app.use(ExpressMongoSanitize());
@@ -36,20 +38,11 @@ app.use("/api/v1/users", userRouter);
 
 // ERROR ROUTES
 app.all("*", (req: Request, _res: Response, next: NextFunction) => {
-  console.log("Q ERROr");
+  logger.error("Can't find this requested route: " + req.originalUrl);
   next(new AppError(`Can't find ${req.originalUrl} on this server!`, 404));
-  console.log("AW ERROR");
 });
 
-app.use((err: any, _req: Request, res: Response, _next: NextFunction) => {
-  console.log(err.statusCode);
-  console.log(err.status);
-
-  res.status(err.statusCode).json({
-    status: err.status,
-    message: err.message,
-  });
-});
-// app.use(globalErrorHandler);
+// GLOBAL ERROR HANDLER
+app.use(globalErrorHandler);
 
 export default app;

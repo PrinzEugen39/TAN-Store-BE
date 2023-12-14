@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 declare global {
   namespace NodeJS {
     interface ProcessEnv {
@@ -5,6 +6,9 @@ declare global {
       PORT: string;
       DATABASE: string;
       DATABASE_PASSWORD: string;
+      JWT_SECRET: string;
+      JWT_EXPIRE: string;
+      JWT_COOKIE_EXPIRES_IN: string;
     }
   }
 }

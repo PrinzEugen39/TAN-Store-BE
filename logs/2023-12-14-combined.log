@@ -1,0 +1,300 @@
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-14 07:26:30"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-14 07:26:31"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-14 07:27:27"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-14 07:27:27"
+}
+
+{
+    "level": "error",
+    "message": "Can't find this requested route: /api/1/users?fields=",
+    "timestamp": "2023-12-14 07:28:00"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-14 07:28:48"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-14 07:28:49"
+}
+
+{
+    "level": "error",
+    "message": "Can't find this requested route: /api/1/users?fields=",
+    "timestamp": "2023-12-14 07:29:25"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-14 07:29:51"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-14 07:29:52"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-14 08:09:51"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-14 08:09:57"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-14 08:11:05"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-14 08:11:05"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-14 08:17:03"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-14 08:17:03"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-14 08:20:13"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-14 08:20:14"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-14 08:22:14"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-14 08:22:14"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-14 08:22:47"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-14 08:22:47"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-14 08:23:28"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-14 08:23:34"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-14 08:23:54"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-14 08:23:55"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-14 08:24:46"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-14 08:24:46"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-14 08:25:19"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-14 08:25:19"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-14 08:26:55"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-14 08:26:55"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-14 08:28:55"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-14 08:28:55"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-14 08:29:09"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-14 08:29:09"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-14 08:30:14"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-14 08:30:14"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-14 08:30:48"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-14 08:30:49"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-14 08:31:22"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-14 08:31:23"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-14 08:33:10"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-14 08:33:11"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-14 08:37:07"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-14 08:37:07"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-14 08:53:22"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-14 08:53:22"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-14 08:53:37"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-14 08:53:37"
+}

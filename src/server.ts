@@ -1,27 +1,8 @@
 import dotenv from "dotenv";
 dotenv.config();
-
 import mongoose from "mongoose";
 import app from "./app";
-import winston from "winston";
-import moment from "moment-timezone";
-
-const logger = winston.createLogger({
-  level: "info",
-  format: winston.format.combine(
-    winston.format.timestamp({
-      format: () => moment.tz("Asia/Jakarta").format("YYYY-MM-DD HH:mm:ss"),
-    }),
-    winston.format.json()
-  ),
-  transports: [
-    new winston.transports.Console(),
-    new winston.transports.File({ filename: "combined.log" }),
-  ],
-  exceptionHandlers: [
-    new winston.transports.File({ filename: "exceptions.log" }),
-  ],
-});
+import { logger } from "./logger/winstonLogger";
 
 process.on("uncaughtException", (err) => {
   logger.error("UNCAUGHT EXCEPTION! 💥 Shutting down...", { error: err });

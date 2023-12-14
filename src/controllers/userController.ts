@@ -3,56 +3,49 @@ import User from "../models/userModel";
 import catchAsync from "../utils/catchAsync";
 import APIFeatures from "../utils/APIFeatures";
 import AppError from "../utils/appError";
+import moment from "moment-timezone";
 
-export const getAllUsers = async (req: Request, res: Response) => {
-  try {
-    const features = new APIFeatures(User, req.query)
-      .filter()
-      .sort()
-      .limitFields()
-      .paginate();
+export const getAllUsers = catchAsync(async (req: Request, res: Response) => {
+  const features = new APIFeatures(User, req.query)
+    .filter()
+    .sort()
+    .limitFields()
+    .paginate();
 
-    const users = await features.query;
+  const users = await features.query;
 
-    return res.status(200).json({
-      status: "success",
-      results: users.length,
-      data: {
-        users,
-      },
-    });
-  } catch (error) {
-    res.status(500).json({
-      status: "fail",
-      message: error,
-    });
-  }
-};
+  return res.status(200).json({
+    status: "success",
+    results: users.length,
+    data: {
+      users,
+    },
+  });
+});
 
-export const createUser = async (
-  req: Request,
-  res: Response,
-  next: NextFunction
-) => {
-  try {
-    console.log("QQQQQ");
+export const createUser = catchAsync(
+  async (req: Request, res: Response, _next: NextFunction) => {
+    const passwordChangedAt = req.body.passwordChangedAt
+      ? moment(req.body.passwordChangedAt).tz("UTC").toDate()
+      : moment().tz("UTC").toDate();
+
     const newUser = await User.create({
       role: req.body.role,
       name: req.body.name,
       email: req.body.email,
       password: req.body.password,
+      passwordConfirm: req.body.passwordConfirm,
+      passwordChangedAt: passwordChangedAt,
     });
+
     res.status(201).json({
       status: "success",
       data: {
-        tour: newUser,
+        user: newUser,
       },
     });
-  } catch (err) {
-    console.log("QQQ");
-    next();
   }
-};
+);
 
 export const deleteUser = catchAsync(
   async (req: Request, res: Response, next: NextFunction) => {
@@ -60,7 +53,7 @@ export const deleteUser = catchAsync(
 
     if (!user) {
       return next(
-        new AppError(`No tour found with ID ${req.params["id"]}`, 404)
+        new AppError(`No user found with ID ${req.params["id"]}`, 404)
       );
     }
 

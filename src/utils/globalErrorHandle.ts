@@ -1,14 +1,13 @@
-import { Request, Response } from "express";
+import { NextFunction, Request, Response } from "express";
 
-// interface CustomError extends Error {
-//   name: string;
-//   statusCode: number;
-//   status: string;
-//   isOperational: boolean;
-//   stack?: any;
-// }
+interface CustomError extends Error {
+  statusCode: number;
+  status: string;
+  isOperational: boolean;
+  // stack?: any;
+}
 
-const sendErrorDev = (err: any, res: Response) => {
+const sendErrorDev = (err: CustomError, res: Response) => {
   res.status(err.statusCode).json({
     name: "error development",
     status: err.status,
@@ -18,7 +17,7 @@ const sendErrorDev = (err: any, res: Response) => {
   });
 };
 
-const sendErrorProd = (err: any, res: Response) => {
+const sendErrorProd = (err: CustomError, res: Response) => {
   if (err.isOperational) {
     res.status(err.statusCode).json({
       status: err.status,
@@ -33,9 +32,12 @@ const sendErrorProd = (err: any, res: Response) => {
   }
 };
 
-const globalErrorHandler = (err: any, req: Request, res: Response) => {
-  console.log("AAA");
-
+const globalErrorHandler = (
+  err: CustomError,
+  _req: Request,
+  res: Response,
+  _next: NextFunction
+) => {
   err.statusCode = err.statusCode || 500;
   err.status = err.status || "error";
 
@@ -45,5 +47,17 @@ const globalErrorHandler = (err: any, req: Request, res: Response) => {
     sendErrorProd(err, res);
   }
 };
+// const globalErrorHandler = (
+//   err: any,
+//   req: Request,
+//   res: Response,
+//   _next: NextFunction
+// ) => {
+//   res.status(err.statusCode).json({
+//     status: err.status,
+//     message: err.message,
+//     stack: err.stack,
+//   });
+// };
 
 export default globalErrorHandler;
