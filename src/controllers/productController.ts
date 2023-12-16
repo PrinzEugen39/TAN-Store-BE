@@ -25,11 +25,31 @@ export const getAllProducts = catchAsync(
   }
 );
 
+export const getProduct = catchAsync(
+  async (req: Request, res: Response, next: NextFunction) => {
+    const product = await Product.findById(req.params.id);
+
+    if (!product) {
+      return next(
+        new AppError(`No product found with ID ${req.params.id}`, 404)
+      );
+    }
+
+    return res.status(200).json({
+      status: "success",
+      data: {
+        product: product,
+      },
+    });
+  }
+);
+
 export const createProduct = catchAsync(
   async (req: Request, res: Response, _next: NextFunction) => {
     const newProduct = await Product.create({
       ...req.body,
       createdAt: moment().tz("UTC").toDate(),
+      updatedAt: moment().tz("UTC").toDate(),
     });
 
     res.status(201).json({

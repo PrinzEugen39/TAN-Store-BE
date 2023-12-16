@@ -1,0 +1,56 @@
+[
+  {
+    "_id": {
+      "$oid": "657b3b57f062aa73d31e6db6"
+    },
+    "name": "Acupuncture Mat",
+    "price": 150000,
+    "description": "A comfortable acupuncture mat for relaxation and stress relief.",
+    "image": [
+      "https://res.cloudinary.com/dl7ttedsi/image/upload/f_auto,q_auto/v1/TAN-Store/mkyh2xjoenmpcildarob",
+      "https://res.cloudinary.com/dl7ttedsi/image/upload/f_auto,q_auto/v1/TAN-Store/krttyvdf1tg6a3a4uyyl"
+    ],
+    "qty": 5,
+    "createdAt": {
+      "$date": "2023-12-14T17:28:55.320Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "657b3e3b7dc02ef568735dc7"
+    },
+    "name": "Acupuncture Pen",
+    "price": 50000,
+    "description": "An electronic acupuncture pen for precise acupuncture point stimulation.",
+    "image": [
+      "https://res.cloudinary.com/dl7ttedsi/image/upload/f_auto,q_auto/v1/TAN-Store/mkyh2xjoenmpcildarob",
+      "https://res.cloudinary.com/dl7ttedsi/image/upload/f_auto,q_auto/v1/TAN-Store/krttyvdf1tg6a3a4uyyl"
+    ],
+    "qty": 15,
+    "createdAt": {
+      "$date": "2023-12-14T17:41:15.338Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "657d9b06339991cee0ff4ad6"
+    },
+    "name": "Acupuncture Needle Set",
+    "price": 26500,
+    "description": "A set of high-quality acupuncture needles for professional use.",
+    "image": [
+      "https://res.cloudinary.com/dl7ttedsi/image/upload/f_auto,q_auto/v1/TAN-Store/mkyh2xjoenmpcildarob",
+      "https://res.cloudinary.com/dl7ttedsi/image/upload/f_auto,q_auto/v1/TAN-Store/krttyvdf1tg6a3a4uyyl"
+    ],
+    "qty": 10,
+    "createdAt": {
+      "$date": "2023-12-16T12:41:42.913Z"
+    },
+    "updatedAt": {
+      "$date": "2023-12-16T12:41:42.914Z"
+    },
+    "__v": 0
+  }
+]

@@ -3,7 +3,6 @@ import User from "../models/userModel";
 import catchAsync from "../utils/catchAsync";
 import APIFeatures from "../utils/APIFeatures";
 import AppError from "../utils/appError";
-import moment from "moment-timezone";
 
 export const getAllUsers = catchAsync(async (req: Request, res: Response) => {
   const features = new APIFeatures(User, req.query)
@@ -25,14 +24,7 @@ export const getAllUsers = catchAsync(async (req: Request, res: Response) => {
 
 export const createUser = catchAsync(
   async (req: Request, res: Response, _next: NextFunction) => {
-    const passwordChangedAt = req.body.passwordChangedAt
-      ? moment(req.body.passwordChangedAt).tz("UTC").toDate()
-      : moment().tz("UTC").toDate();
-
-    const newUser = await User.create({
-      ...req.body,
-      passwordChangedAt: passwordChangedAt,
-    });
+    const newUser = await User.create(req.body);
 
     res.status(201).json({
       status: "success",

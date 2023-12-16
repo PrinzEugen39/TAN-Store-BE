@@ -1,4 +1,5 @@
-import mongoose from "mongoose";
+/* eslint-disable no-unused-vars */
+import mongoose, { Document } from "mongoose";
 import validatorAlpha from "validator";
 import bcrypt from "bcrypt";
 
@@ -14,7 +15,14 @@ export interface IUser {
   passwordResetExpires?: Date;
 }
 
-const userSchema = new mongoose.Schema<IUser>({
+export interface IUserDocument extends Document, IUser {
+  correctPassword(
+    candidatePassword: string,
+    userPassword: string
+  ): Promise<boolean>;
+}
+
+const userSchema = new mongoose.Schema<IUserDocument>({
   role: {
     type: String,
     enum: ["user", "admin"],
@@ -52,7 +60,10 @@ const userSchema = new mongoose.Schema<IUser>({
   avatar: {
     type: String,
   },
-  passwordChangedAt: Date,
+  passwordChangedAt: {
+    type: Date,
+    default: Date.now(),
+  },
   passwordResetToken: String,
   passwordResetExpires: Date,
 });
@@ -72,6 +83,13 @@ userSchema.pre("save", function (next) {
   next();
 });
 
-const User = mongoose.model("User", userSchema);
+userSchema.methods.correctPassword = async function (
+  candidatePassword: string,
+  userPassword: string
+) {
+  return await bcrypt.compare(candidatePassword, userPassword);
+};
+
+const User = mongoose.model<IUserDocument>("User", userSchema);
 
 export default User;

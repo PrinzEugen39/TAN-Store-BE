@@ -1,0 +1,14 @@
+[
+  {
+    "role": "admin",
+    "name": "admin",
+    "email": "admin@gmail.com",
+    "password": "root1234"
+  },
+  {
+    "role": "user",
+    "name": "pecel2a",
+    "email": "pecel2a@gmail.com",
+    "password": "root1234"
+  }
+]

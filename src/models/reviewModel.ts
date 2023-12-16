@@ -1,6 +1,16 @@
 import mongoose from "mongoose";
 
-const reviewSchema = new mongoose.Schema(
+interface IReview {
+  review: string;
+  rating: number;
+  createdAt: Date;
+  product: mongoose.Types.ObjectId | string;
+  user: mongoose.Types.ObjectId | string;
+}
+
+export interface IReviewDoc extends IReview, mongoose.Document {}
+
+const reviewSchema: mongoose.Schema = new mongoose.Schema(
   {
     review: {
       type: String,
@@ -15,10 +25,10 @@ const reviewSchema = new mongoose.Schema(
       type: Date,
       default: Date.now(),
     },
-    tour: {
+    product: {
       type: mongoose.Schema.ObjectId,
-      ref: "Tour",
-      required: [true, "Review must belong to a tour!"],
+      ref: "Product",
+      required: [true, "Review must belong to a Product!"],
     },
     user: {
       type: mongoose.Schema.ObjectId,
@@ -32,6 +42,6 @@ const reviewSchema = new mongoose.Schema(
   }
 );
 
-const Review = mongoose.model("Review", reviewSchema);
+const Review = mongoose.model<IReviewDoc>("Review", reviewSchema);
 
 export default Review;
