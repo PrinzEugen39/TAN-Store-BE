@@ -4,6 +4,7 @@ import catchAsync from "../utils/catchAsync";
 import APIFeatures from "../utils/APIFeatures";
 import AppError from "../utils/appError";
 import moment from "moment-timezone";
+import cloudinaryConfig from "../libs/cloudinary";
 
 export const getAllProducts = catchAsync(
   async (req: Request, res: Response, _next: NextFunction) => {
@@ -46,8 +47,22 @@ export const getProduct = catchAsync(
 
 export const createProduct = catchAsync(
   async (req: Request, res: Response, _next: NextFunction) => {
+    let image;
+    cloudinaryConfig.upload();
+
+    if (res.locals.filename) {
+      image = await cloudinaryConfig.destination(res.locals.filename);
+    }
+    // const files = req.files as Express.Multer.File[];
+    // const image = await Promise.all(
+    //   files.map(async (file: Express.Multer.File) => {
+    //     return await cloudinaryConfig.destination(file.filename);
+    //   })
+    // );
+
     const newProduct = await Product.create({
       ...req.body,
+      image: image ? [image] : [""],
       createdAt: moment().tz("UTC").toDate(),
       updatedAt: moment().tz("UTC").toDate(),
     });

@@ -9,6 +9,9 @@ declare global {
       JWT_SECRET: string;
       JWT_EXPIRE: string;
       JWT_COOKIE_EXPIRES_IN: string;
+      CLOUDINARY_NAME: string;
+      CLOUDINARY_KEY: string;
+      CLOUDINARY_SECRET: string;
     }
   }
 }
