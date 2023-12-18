@@ -22,6 +22,23 @@ export const getAllUsers = catchAsync(async (req: Request, res: Response) => {
   });
 });
 
+export const getUser = catchAsync(
+  async (req: Request, res: Response, next: NextFunction) => {
+    const user = await User.findById(req.params.id);
+
+    if (!user) {
+      return next(new AppError(`No user found with ID ${req.params.id}`, 404));
+    }
+
+    return res.status(200).json({
+      status: "success",
+      data: {
+        user: user,
+      },
+    });
+  }
+);
+
 export const createUser = catchAsync(
   async (req: Request, res: Response, _next: NextFunction) => {
     const newUser = await User.create(req.body);

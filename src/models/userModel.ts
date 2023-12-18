@@ -46,6 +46,7 @@ const userSchema = new mongoose.Schema<IUserDocument>({
     type: String,
     required: [true, "Please add a password"],
     minlength: 8,
+    select: false,
   },
   passwordConfirm: {
     type: String,
