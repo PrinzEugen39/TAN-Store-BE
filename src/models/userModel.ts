@@ -22,52 +22,57 @@ export interface IUserDocument extends Document, IUser {
   ): Promise<boolean>;
 }
 
-const userSchema = new mongoose.Schema<IUserDocument>({
-  role: {
-    type: String,
-    enum: ["user", "admin"],
-    default: "user",
-  },
-  name: {
-    type: String,
-    required: [true, "Please add a name"],
-    trim: true,
-    maxlength: [16, "Name can not be more than 20 characters"],
-  },
-  email: {
-    type: String,
-    required: [true, "Please add an email"],
-    unique: true,
-    trim: true,
-    lowercase: true,
-    validate: [validatorAlpha.isEmail, "Please provide a valid email"],
-  },
-  password: {
-    type: String,
-    required: [true, "Please add a password"],
-    minlength: 8,
-    select: false,
-  },
-  passwordConfirm: {
-    type: String,
-    required: [true, "Please confirm your password"],
-    validate: {
-      validator: function (this: IUser, val: string): boolean {
-        return val === this.password;
-      },
-      message: "Passwords do not match",
+const userSchema = new mongoose.Schema<IUserDocument>(
+  {
+    role: {
+      type: String,
+      enum: ["user", "admin"],
+      default: "user",
     },
+    name: {
+      type: String,
+      required: [true, "Please add a name"],
+      trim: true,
+      maxlength: [16, "Name can not be more than 20 characters"],
+    },
+    email: {
+      type: String,
+      required: [true, "Please add an email"],
+      unique: true,
+      trim: true,
+      lowercase: true,
+      validate: [validatorAlpha.isEmail, "Please provide a valid email"],
+    },
+    password: {
+      type: String,
+      required: [true, "Please add a password"],
+      minlength: 8,
+      select: false,
+    },
+    passwordConfirm: {
+      type: String,
+      required: [true, "Please confirm your password"],
+      validate: {
+        validator: function (this: IUser, val: string): boolean {
+          return val === this.password;
+        },
+        message: "Passwords do not match",
+      },
+    },
+    avatar: {
+      type: String,
+    },
+    passwordChangedAt: {
+      type: Date,
+      default: Date.now(),
+    },
+    passwordResetToken: String,
+    passwordResetExpires: Date,
   },
-  avatar: {
-    type: String,
-  },
-  passwordChangedAt: {
-    type: Date,
-    default: Date.now(),
-  },
-  passwordResetToken: String,
-  passwordResetExpires: Date,
-});
+  {
+    versionKey: false,
+  }
+);
 
 userSchema.pre("save", async function (next) {
   if (!this.isModified("password")) return next();

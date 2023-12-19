@@ -1,0 +1,1739 @@
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-19 04:55:57"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-19 04:56:03"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-19 04:59:11"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-19 04:59:16"
+}
+
+{
+    "level": "info",
+    "message": "root1234",
+    "timestamp": "2023-12-19 04:59:17"
+}
+
+{
+    "level": "info",
+    "message": {
+        "__v": 0,
+        "_id": "657d9f709081649f489b75c7",
+        "email": "admin@gmail.com",
+        "name": "admin",
+        "passwordChangedAt": "2023-12-16T12:59:55.344Z",
+        "role": "admin"
+    },
+    "timestamp": "2023-12-19 04:59:18"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-19 05:00:08"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-19 05:00:12"
+}
+
+{
+    "level": "info",
+    "message": "root1234",
+    "timestamp": "2023-12-19 05:00:19"
+}
+
+{
+    "level": "info",
+    "message": {
+        "__v": 0,
+        "_id": "657d9f709081649f489b75c7",
+        "email": "admin@gmail.com",
+        "name": "admin",
+        "password": "$2b$12$WsOi5LdSpt8fethCo.1EDut91u1spXXrTNE32kn5CHqUUeJS9pUAC",
+        "passwordChangedAt": "2023-12-16T12:59:55.344Z",
+        "role": "admin"
+    },
+    "timestamp": "2023-12-19 05:00:20"
+}
+
+{
+    "level": "info",
+    "message": {
+        "exp": 1703368820,
+        "iat": 1702936820,
+        "id": "657d9f709081649f489b75c7"
+    },
+    "timestamp": "2023-12-19 05:00:35"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-19 05:05:38"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-19 05:05:44"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-19 05:07:12"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-19 05:07:18"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-19 05:11:37"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-19 05:11:43"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-19 05:15:01"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-19 05:15:07"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-19 05:15:31"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-19 05:15:35"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-19 05:15:48"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-19 05:15:54"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-19 05:15:58"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-19 05:16:56"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-19 05:17:00"
+}
+
+{
+    "level": "info",
+    "message": "root1234",
+    "timestamp": "2023-12-19 05:17:13"
+}
+
+{
+    "level": "info",
+    "message": {
+        "__v": 0,
+        "_id": "657d9f859081649f489b75ca",
+        "email": "pecel2a@gmail.com",
+        "name": "pecel2a",
+        "password": "$2b$12$T38JkdRDn1aJKR51Ziz8XeviOjp6.MTiPZFcex3tKr0K5hIKNqbMG",
+        "passwordChangedAt": "2023-12-16T12:59:55.344Z",
+        "role": "user"
+    },
+    "timestamp": "2023-12-19 05:17:13"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-19 05:19:01"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-19 05:19:06"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-19 05:21:10"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-19 05:21:16"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-19 05:21:26"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-19 05:21:30"
+}
+
+{
+    "level": "info",
+    "message": "root1234",
+    "timestamp": "2023-12-19 05:21:39"
+}
+
+{
+    "level": "info",
+    "message": {
+        "__v": 0,
+        "_id": "657d9f709081649f489b75c7",
+        "email": "admin@gmail.com",
+        "name": "admin",
+        "password": "$2b$12$WsOi5LdSpt8fethCo.1EDut91u1spXXrTNE32kn5CHqUUeJS9pUAC",
+        "passwordChangedAt": "2023-12-16T12:59:55.344Z",
+        "role": "admin"
+    },
+    "timestamp": "2023-12-19 05:21:39"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-19 05:21:57"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-19 05:22:01"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-19 05:22:16"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-19 05:22:22"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-19 05:25:30"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-19 05:25:37"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-19 05:25:41"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-19 05:26:31"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-19 05:26:36"
+}
+
+{
+    "level": "info",
+    "message": {
+        "_consuming": false,
+        "_dumped": false,
+        "_events": {},
+        "_eventsCount": 0,
+        "_parsedUrl": {
+            "_raw": "/",
+            "auth": null,
+            "hash": null,
+            "host": null,
+            "hostname": null,
+            "href": "/",
+            "path": "/",
+            "pathname": "/",
+            "port": null,
+            "protocol": null,
+            "query": null,
+            "search": null,
+            "slashes": null
+        },
+        "_readableState": {
+            "autoDestroy": true,
+            "awaitDrainWriters": null,
+            "buffer": {
+                "head": null,
+                "length": 0,
+                "tail": null
+            },
+            "closeEmitted": false,
+            "closed": false,
+            "constructed": true,
+            "dataEmitted": false,
+            "decoder": null,
+            "defaultEncoding": "utf8",
+            "destroyed": false,
+            "emitClose": true,
+            "emittedReadable": false,
+            "encoding": null,
+            "endEmitted": false,
+            "ended": true,
+            "errorEmitted": false,
+            "errored": null,
+            "flowing": null,
+            "highWaterMark": 16384,
+            "length": 0,
+            "multiAwaitDrain": false,
+            "needReadable": false,
+            "objectMode": false,
+            "pipes": [],
+            "readableListening": false,
+            "reading": false,
+            "readingMore": true,
+            "resumeScheduled": false,
+            "sync": true
+        },
+        "_remoteAddress": "::1",
+        "_startAt": [
+            2570,
+            75136200
+        ],
+        "_startTime": "2023-12-18T22:26:41.371Z",
+        "aborted": false,
+        "baseUrl": "/api/v1/users",
+        "body": {},
+        "client": {
+            "_closeAfterHandlingError": false,
+            "_events": {
+                "close": [
+                    null,
+                    null,
+                    null
+                ],
+                "end": [
+                    null,
+                    null
+                ],
+                "error": [
+                    null,
+                    null
+                ]
+            },
+            "_eventsCount": 8,
+            "_hadError": false,
+            "_host": null,
+            "_httpMessage": {
+                "_closed": false,
+                "_contentLength": null,
+                "_defaultKeepAlive": true,
+                "_events": {
+                    "finish": [
+                        null,
+                        null
+                    ]
+                },
+                "_eventsCount": 2,
+                "_expect_continue": false,
+                "_hasBody": true,
+                "_header": null,
+                "_headerSent": false,
+                "_keepAliveTimeout": 5000,
+                "_last": false,
+                "_maxRequestsPerSocket": 0,
+                "_removedConnection": false,
+                "_removedContLen": false,
+                "_removedTE": false,
+                "_sent100": false,
+                "_trailer": "",
+                "chunkedEncoding": false,
+                "destroyed": false,
+                "finished": false,
+                "locals": {},
+                "maxRequestsOnConnectionReached": false,
+                "outputData": [],
+                "outputSize": 0,
+                "req": "[Circular]",
+                "sendDate": true,
+                "shouldKeepAlive": true,
+                "socket": "[Circular]",
+                "strictContentLength": false,
+                "useChunkedEncodingByDefault": true,
+                "writable": true
+            },
+            "_parent": null,
+            "_paused": false,
+            "_peername": {
+                "address": "::1",
+                "family": "IPv6",
+                "port": 65074
+            },
+            "_pendingData": null,
+            "_pendingEncoding": "",
+            "_readableState": {
+                "autoDestroy": true,
+                "awaitDrainWriters": null,
+                "buffer": {
+                    "head": null,
+                    "length": 0,
+                    "tail": null
+                },
+                "closeEmitted": false,
+                "closed": false,
+                "constructed": true,
+                "dataEmitted": false,
+                "decoder": null,
+                "defaultEncoding": "utf8",
+                "destroyed": false,
+                "emitClose": false,
+                "emittedReadable": false,
+                "encoding": null,
+                "endEmitted": false,
+                "ended": false,
+                "errorEmitted": false,
+                "errored": null,
+                "flowing": true,
+                "highWaterMark": 16384,
+                "length": 0,
+                "multiAwaitDrain": false,
+                "needReadable": true,
+                "objectMode": false,
+                "pipes": [],
+                "readableListening": false,
+                "reading": true,
+                "readingMore": false,
+                "resumeScheduled": false,
+                "sync": false
+            },
+            "_server": {
+                "_connectionKey": "6::::6900",
+                "_connections": 1,
+                "_events": {},
+                "_eventsCount": 2,
+                "_handle": {
+                    "reading": false
+                },
+                "_unref": false,
+                "_usingWorkers": false,
+                "_workers": [],
+                "allowHalfOpen": true,
+                "connectionsCheckingInterval": 30000,
+                "headersTimeout": 60000,
+                "highWaterMark": 16384,
+                "httpAllowHalfOpen": false,
+                "keepAlive": false,
+                "keepAliveInitialDelay": 0,
+                "keepAliveTimeout": 5000,
+                "maxHeadersCount": null,
+                "maxRequestsPerSocket": 0,
+                "noDelay": true,
+                "pauseOnConnect": false,
+                "rejectNonStandardBodyWrites": false,
+                "requestTimeout": 300000,
+                "timeout": 0
+            },
+            "_sockname": null,
+            "_writableState": {
+                "afterWriteTickInfo": null,
+                "allBuffers": true,
+                "allNoop": true,
+                "autoDestroy": true,
+                "bufferProcessing": false,
+                "buffered": [],
+                "bufferedIndex": 0,
+                "closeEmitted": false,
+                "closed": false,
+                "constructed": true,
+                "corked": 0,
+                "decodeStrings": false,
+                "defaultEncoding": "utf8",
+                "destroyed": false,
+                "emitClose": false,
+                "ended": false,
+                "ending": false,
+                "errorEmitted": false,
+                "errored": null,
+                "finalCalled": false,
+                "finished": false,
+                "highWaterMark": 16384,
+                "length": 0,
+                "needDrain": false,
+                "objectMode": false,
+                "pendingcb": 0,
+                "prefinished": false,
+                "sync": false,
+                "writecb": null,
+                "writelen": 0,
+                "writing": false
+            },
+            "allowHalfOpen": true,
+            "connecting": false,
+            "parser": {
+                "0": null,
+                "_consumed": true,
+                "_headers": [],
+                "_url": "",
+                "incoming": "[Circular]",
+                "maxHeaderPairs": 2000,
+                "outgoing": null,
+                "socket": "[Circular]"
+            },
+            "server": {
+                "_connectionKey": "6::::6900",
+                "_connections": 1,
+                "_events": {},
+                "_eventsCount": 2,
+                "_handle": {
+                    "reading": false
+                },
+                "_unref": false,
+                "_usingWorkers": false,
+                "_workers": [],
+                "allowHalfOpen": true,
+                "connectionsCheckingInterval": 30000,
+                "headersTimeout": 60000,
+                "highWaterMark": 16384,
+                "httpAllowHalfOpen": false,
+                "keepAlive": false,
+                "keepAliveInitialDelay": 0,
+                "keepAliveTimeout": 5000,
+                "maxHeadersCount": null,
+                "maxRequestsPerSocket": 0,
+                "noDelay": true,
+                "pauseOnConnect": false,
+                "rejectNonStandardBodyWrites": false,
+                "requestTimeout": 300000,
+                "timeout": 0
+            },
+            "timeout": 0
+        },
+        "complete": true,
+        "httpVersion": "1.1",
+        "httpVersionMajor": 1,
+        "httpVersionMinor": 1,
+        "method": "GET",
+        "originalUrl": "/api/v1/users",
+        "params": {},
+        "query": {},
+        "rateLimit": {
+            "limit": 200,
+            "remaining": 198,
+            "resetTime": "2023-12-18T23:26:37.500Z",
+            "used": 2
+        },
+        "rawHeaders": [
+            "Authorization",
+            "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1N2Q5ZjcwOTA4MTY0OWY0ODliNzVjNyIsImlhdCI6MTcwMjkzODM5OCwiZXhwIjoxNzAzMzcwMzk4fQ.exmEXz5j-0JE-ppnAWj6HnY5MvDFvYsnkT0JpsRa_zs",
+            "User-Agent",
+            "PostmanRuntime/7.36.0",
+            "Accept",
+            "*/*",
+            "Postman-Token",
+            "7f11b004-7a8f-4914-97be-8cf7621e0786",
+            "Host",
+            "localhost:6900",
+            "Accept-Encoding",
+            "gzip, deflate, br",
+            "Connection",
+            "keep-alive",
+            "Cookie",
+            "jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1N2Q5ZjcwOTA4MTY0OWY0ODliNzVjNyIsImlhdCI6MTcwMjkzODM5OCwiZXhwIjoxNzAzMzcwMzk4fQ.exmEXz5j-0JE-ppnAWj6HnY5MvDFvYsnkT0JpsRa_zs"
+        ],
+        "rawTrailers": [],
+        "res": {
+            "_closed": false,
+            "_contentLength": null,
+            "_defaultKeepAlive": true,
+            "_events": {
+                "finish": [
+                    null,
+                    null
+                ]
+            },
+            "_eventsCount": 2,
+            "_expect_continue": false,
+            "_hasBody": true,
+            "_header": null,
+            "_headerSent": false,
+            "_keepAliveTimeout": 5000,
+            "_last": false,
+            "_maxRequestsPerSocket": 0,
+            "_removedConnection": false,
+            "_removedContLen": false,
+            "_removedTE": false,
+            "_sent100": false,
+            "_trailer": "",
+            "chunkedEncoding": false,
+            "destroyed": false,
+            "finished": false,
+            "locals": {},
+            "maxRequestsOnConnectionReached": false,
+            "outputData": [],
+            "outputSize": 0,
+            "req": "[Circular]",
+            "sendDate": true,
+            "shouldKeepAlive": true,
+            "socket": {
+                "_closeAfterHandlingError": false,
+                "_events": {
+                    "close": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "end": [
+                        null,
+                        null
+                    ],
+                    "error": [
+                        null,
+                        null
+                    ]
+                },
+                "_eventsCount": 8,
+                "_hadError": false,
+                "_host": null,
+                "_httpMessage": "[Circular]",
+                "_parent": null,
+                "_paused": false,
+                "_peername": {
+                    "address": "::1",
+                    "family": "IPv6",
+                    "port": 65074
+                },
+                "_pendingData": null,
+                "_pendingEncoding": "",
+                "_readableState": {
+                    "autoDestroy": true,
+                    "awaitDrainWriters": null,
+                    "buffer": {
+                        "head": null,
+                        "length": 0,
+                        "tail": null
+                    },
+                    "closeEmitted": false,
+                    "closed": false,
+                    "constructed": true,
+                    "dataEmitted": false,
+                    "decoder": null,
+                    "defaultEncoding": "utf8",
+                    "destroyed": false,
+                    "emitClose": false,
+                    "emittedReadable": false,
+                    "encoding": null,
+                    "endEmitted": false,
+                    "ended": false,
+                    "errorEmitted": false,
+                    "errored": null,
+                    "flowing": true,
+                    "highWaterMark": 16384,
+                    "length": 0,
+                    "multiAwaitDrain": false,
+                    "needReadable": true,
+                    "objectMode": false,
+                    "pipes": [],
+                    "readableListening": false,
+                    "reading": true,
+                    "readingMore": false,
+                    "resumeScheduled": false,
+                    "sync": false
+                },
+                "_server": {
+                    "_connectionKey": "6::::6900",
+                    "_connections": 1,
+                    "_events": {},
+                    "_eventsCount": 2,
+                    "_handle": {
+                        "reading": false
+                    },
+                    "_unref": false,
+                    "_usingWorkers": false,
+                    "_workers": [],
+                    "allowHalfOpen": true,
+                    "connectionsCheckingInterval": 30000,
+                    "headersTimeout": 60000,
+                    "highWaterMark": 16384,
+                    "httpAllowHalfOpen": false,
+                    "keepAlive": false,
+                    "keepAliveInitialDelay": 0,
+                    "keepAliveTimeout": 5000,
+                    "maxHeadersCount": null,
+                    "maxRequestsPerSocket": 0,
+                    "noDelay": true,
+                    "pauseOnConnect": false,
+                    "rejectNonStandardBodyWrites": false,
+                    "requestTimeout": 300000,
+                    "timeout": 0
+                },
+                "_sockname": null,
+                "_writableState": {
+                    "afterWriteTickInfo": null,
+                    "allBuffers": true,
+                    "allNoop": true,
+                    "autoDestroy": true,
+                    "bufferProcessing": false,
+                    "buffered": [],
+                    "bufferedIndex": 0,
+                    "closeEmitted": false,
+                    "closed": false,
+                    "constructed": true,
+                    "corked": 0,
+                    "decodeStrings": false,
+                    "defaultEncoding": "utf8",
+                    "destroyed": false,
+                    "emitClose": false,
+                    "ended": false,
+                    "ending": false,
+                    "errorEmitted": false,
+                    "errored": null,
+                    "finalCalled": false,
+                    "finished": false,
+                    "highWaterMark": 16384,
+                    "length": 0,
+                    "needDrain": false,
+                    "objectMode": false,
+                    "pendingcb": 0,
+                    "prefinished": false,
+                    "sync": false,
+                    "writecb": null,
+                    "writelen": 0,
+                    "writing": false
+                },
+                "allowHalfOpen": true,
+                "connecting": false,
+                "parser": {
+                    "0": null,
+                    "_consumed": true,
+                    "_headers": [],
+                    "_url": "",
+                    "incoming": "[Circular]",
+                    "maxHeaderPairs": 2000,
+                    "outgoing": null,
+                    "socket": "[Circular]"
+                },
+                "server": {
+                    "_connectionKey": "6::::6900",
+                    "_connections": 1,
+                    "_events": {},
+                    "_eventsCount": 2,
+                    "_handle": {
+                        "reading": false
+                    },
+                    "_unref": false,
+                    "_usingWorkers": false,
+                    "_workers": [],
+                    "allowHalfOpen": true,
+                    "connectionsCheckingInterval": 30000,
+                    "headersTimeout": 60000,
+                    "highWaterMark": 16384,
+                    "httpAllowHalfOpen": false,
+                    "keepAlive": false,
+                    "keepAliveInitialDelay": 0,
+                    "keepAliveTimeout": 5000,
+                    "maxHeadersCount": null,
+                    "maxRequestsPerSocket": 0,
+                    "noDelay": true,
+                    "pauseOnConnect": false,
+                    "rejectNonStandardBodyWrites": false,
+                    "requestTimeout": 300000,
+                    "timeout": 0
+                },
+                "timeout": 0
+            },
+            "strictContentLength": false,
+            "useChunkedEncodingByDefault": true,
+            "writable": true
+        },
+        "socket": {
+            "_closeAfterHandlingError": false,
+            "_events": {
+                "close": [
+                    null,
+                    null,
+                    null
+                ],
+                "end": [
+                    null,
+                    null
+                ],
+                "error": [
+                    null,
+                    null
+                ]
+            },
+            "_eventsCount": 8,
+            "_hadError": false,
+            "_host": null,
+            "_httpMessage": {
+                "_closed": false,
+                "_contentLength": null,
+                "_defaultKeepAlive": true,
+                "_events": {
+                    "finish": [
+                        null,
+                        null
+                    ]
+                },
+                "_eventsCount": 2,
+                "_expect_continue": false,
+                "_hasBody": true,
+                "_header": null,
+                "_headerSent": false,
+                "_keepAliveTimeout": 5000,
+                "_last": false,
+                "_maxRequestsPerSocket": 0,
+                "_removedConnection": false,
+                "_removedContLen": false,
+                "_removedTE": false,
+                "_sent100": false,
+                "_trailer": "",
+                "chunkedEncoding": false,
+                "destroyed": false,
+                "finished": false,
+                "locals": {},
+                "maxRequestsOnConnectionReached": false,
+                "outputData": [],
+                "outputSize": 0,
+                "req": "[Circular]",
+                "sendDate": true,
+                "shouldKeepAlive": true,
+                "socket": "[Circular]",
+                "strictContentLength": false,
+                "useChunkedEncodingByDefault": true,
+                "writable": true
+            },
+            "_parent": null,
+            "_paused": false,
+            "_peername": {
+                "address": "::1",
+                "family": "IPv6",
+                "port": 65074
+            },
+            "_pendingData": null,
+            "_pendingEncoding": "",
+            "_readableState": {
+                "autoDestroy": true,
+                "awaitDrainWriters": null,
+                "buffer": {
+                    "head": null,
+                    "length": 0,
+                    "tail": null
+                },
+                "closeEmitted": false,
+                "closed": false,
+                "constructed": true,
+                "dataEmitted": false,
+                "decoder": null,
+                "defaultEncoding": "utf8",
+                "destroyed": false,
+                "emitClose": false,
+                "emittedReadable": false,
+                "encoding": null,
+                "endEmitted": false,
+                "ended": false,
+                "errorEmitted": false,
+                "errored": null,
+                "flowing": true,
+                "highWaterMark": 16384,
+                "length": 0,
+                "multiAwaitDrain": false,
+                "needReadable": true,
+                "objectMode": false,
+                "pipes": [],
+                "readableListening": false,
+                "reading": true,
+                "readingMore": false,
+                "resumeScheduled": false,
+                "sync": false
+            },
+            "_server": {
+                "_connectionKey": "6::::6900",
+                "_connections": 1,
+                "_events": {},
+                "_eventsCount": 2,
+                "_handle": {
+                    "reading": false
+                },
+                "_unref": false,
+                "_usingWorkers": false,
+                "_workers": [],
+                "allowHalfOpen": true,
+                "connectionsCheckingInterval": 30000,
+                "headersTimeout": 60000,
+                "highWaterMark": 16384,
+                "httpAllowHalfOpen": false,
+                "keepAlive": false,
+                "keepAliveInitialDelay": 0,
+                "keepAliveTimeout": 5000,
+                "maxHeadersCount": null,
+                "maxRequestsPerSocket": 0,
+                "noDelay": true,
+                "pauseOnConnect": false,
+                "rejectNonStandardBodyWrites": false,
+                "requestTimeout": 300000,
+                "timeout": 0
+            },
+            "_sockname": null,
+            "_writableState": {
+                "afterWriteTickInfo": null,
+                "allBuffers": true,
+                "allNoop": true,
+                "autoDestroy": true,
+                "bufferProcessing": false,
+                "buffered": [],
+                "bufferedIndex": 0,
+                "closeEmitted": false,
+                "closed": false,
+                "constructed": true,
+                "corked": 0,
+                "decodeStrings": false,
+                "defaultEncoding": "utf8",
+                "destroyed": false,
+                "emitClose": false,
+                "ended": false,
+                "ending": false,
+                "errorEmitted": false,
+                "errored": null,
+                "finalCalled": false,
+                "finished": false,
+                "highWaterMark": 16384,
+                "length": 0,
+                "needDrain": false,
+                "objectMode": false,
+                "pendingcb": 0,
+                "prefinished": false,
+                "sync": false,
+                "writecb": null,
+                "writelen": 0,
+                "writing": false
+            },
+            "allowHalfOpen": true,
+            "connecting": false,
+            "parser": {
+                "0": null,
+                "_consumed": true,
+                "_headers": [],
+                "_url": "",
+                "incoming": "[Circular]",
+                "maxHeaderPairs": 2000,
+                "outgoing": null,
+                "socket": "[Circular]"
+            },
+            "server": {
+                "_connectionKey": "6::::6900",
+                "_connections": 1,
+                "_events": {},
+                "_eventsCount": 2,
+                "_handle": {
+                    "reading": false
+                },
+                "_unref": false,
+                "_usingWorkers": false,
+                "_workers": [],
+                "allowHalfOpen": true,
+                "connectionsCheckingInterval": 30000,
+                "headersTimeout": 60000,
+                "highWaterMark": 16384,
+                "httpAllowHalfOpen": false,
+                "keepAlive": false,
+                "keepAliveInitialDelay": 0,
+                "keepAliveTimeout": 5000,
+                "maxHeadersCount": null,
+                "maxRequestsPerSocket": 0,
+                "noDelay": true,
+                "pauseOnConnect": false,
+                "rejectNonStandardBodyWrites": false,
+                "requestTimeout": 300000,
+                "timeout": 0
+            },
+            "timeout": 0
+        },
+        "statusCode": null,
+        "statusMessage": null,
+        "upgrade": false,
+        "url": "/",
+        "user": {
+            "__v": 0,
+            "_id": "657d9f709081649f489b75c7",
+            "email": "admin@gmail.com",
+            "name": "admin",
+            "passwordChangedAt": "2023-12-16T12:59:55.344Z",
+            "role": "admin"
+        }
+    },
+    "timestamp": "2023-12-19 05:26:41"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-19 05:28:44"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-19 05:28:50"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-19 05:30:44"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-19 05:30:49"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-19 05:30:54"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-19 05:34:14"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-19 05:34:19"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-19 05:36:22"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-19 05:36:27"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-19 05:37:47"
+}
+
+{
+    "level": "info",
+    "message": {
+        "exp": 1703371022,
+        "iat": 1702939022,
+        "id": "657d9f709081649f489b75c7"
+    },
+    "timestamp": "2023-12-19 05:37:50"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-19 05:37:53"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-19 05:58:26"
+}
+
+{
+    "level": "info",
+    "message": {
+        "exp": 1703371022,
+        "iat": 1702939022,
+        "id": "657d9f709081649f489b75c7"
+    },
+    "timestamp": "2023-12-19 05:58:30"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-19 05:58:32"
+}
+
+{
+    "level": "info",
+    "message": {
+        "exp": 1703371022,
+        "iat": 1702939022,
+        "id": "657d9f709081649f489b75c7"
+    },
+    "timestamp": "2023-12-19 08:40:28"
+}
+
+{
+    "level": "info",
+    "message": {
+        "exp": 1703371022,
+        "iat": 1702939022,
+        "id": "657d9f709081649f489b75c7"
+    },
+    "timestamp": "2023-12-19 08:40:40"
+}
+
+{
+    "level": "info",
+    "message": {
+        "exp": 1703371022,
+        "iat": 1702939022,
+        "id": "657d9f709081649f489b75c7"
+    },
+    "timestamp": "2023-12-19 08:40:42"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-19 10:48:30"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-19 10:48:34"
+}
+
+{
+    "level": "info",
+    "message": {
+        "exp": 1702968599,
+        "iat": 1702957799,
+        "id": "657d9f709081649f489b75c7"
+    },
+    "timestamp": "2023-12-19 10:50:09"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-19 10:51:02"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-19 10:51:06"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-19 10:53:08"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-19 10:53:12"
+}
+
+{
+    "level": "info",
+    "message": {
+        "exp": 1702968599,
+        "iat": 1702957799,
+        "id": "657d9f709081649f489b75c7"
+    },
+    "timestamp": "2023-12-19 10:53:14"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-19 10:54:38"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-19 10:54:41"
+}
+
+{
+    "level": "info",
+    "message": {
+        "exp": 1702968599,
+        "iat": 1702957799,
+        "id": "657d9f709081649f489b75c7"
+    },
+    "timestamp": "2023-12-19 10:54:45"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-19 10:55:04"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-19 10:55:06"
+}
+
+{
+    "level": "info",
+    "message": {
+        "exp": 1702968599,
+        "iat": 1702957799,
+        "id": "657d9f709081649f489b75c7"
+    },
+    "timestamp": "2023-12-19 10:55:12"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-19 11:00:28"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-19 11:00:35"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-19 11:01:50"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-19 11:01:57"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-19 11:04:47"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-19 11:04:53"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-19 11:05:34"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-19 11:05:39"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-19 11:05:55"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-19 11:06:00"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-19 11:20:06"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-19 11:20:10"
+}
+
+{
+    "level": "info",
+    "message": {
+        "exp": 1702968599,
+        "iat": 1702957799,
+        "id": "657d9f709081649f489b75c7"
+    },
+    "timestamp": "2023-12-19 11:20:52"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-19 11:21:55"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-19 11:22:00"
+}
+
+{
+    "level": "info",
+    "message": {
+        "exp": 1702968599,
+        "iat": 1702957799,
+        "id": "657d9f709081649f489b75c7"
+    },
+    "timestamp": "2023-12-19 11:22:33"
+}
+
+{
+    "level": "info",
+    "message": [
+        {
+            "destination": "src/libs/uploads",
+            "encoding": "7bit",
+            "fieldname": "image",
+            "filename": "1702959753980-image.png",
+            "mimetype": "application/octet-stream",
+            "originalname": "Errm53VVcAE05Jb.jfif",
+            "path": "src\\libs\\uploads\\1702959753980-image.png",
+            "size": 255481
+        },
+        {
+            "destination": "src/libs/uploads",
+            "encoding": "7bit",
+            "fieldname": "image",
+            "filename": "1702959753982-image.png",
+            "mimetype": "application/octet-stream",
+            "originalname": "Errm53VU0AI5xgw.jfif",
+            "path": "src\\libs\\uploads\\1702959753982-image.png",
+            "size": 289275
+        }
+    ],
+    "timestamp": "2023-12-19 11:22:33"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-19 11:42:36"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-19 11:42:42"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-19 11:43:06"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-19 11:43:09"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-19 11:44:02"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-19 11:44:06"
+}
+
+{
+    "level": "info",
+    "message": {
+        "exp": 1702968599,
+        "iat": 1702957799,
+        "id": "657d9f709081649f489b75c7"
+    },
+    "timestamp": "2023-12-19 11:44:29"
+}
+
+{
+    "level": "info",
+    "message": [
+        "https://res.cloudinary.com/dl7ttedsi/image/upload/v1702961067/q3330j20cxhcth5n5gbs.jpg",
+        "https://res.cloudinary.com/dl7ttedsi/image/upload/v1702961069/jhcvkkr3cdxnj5powy3f.jpg",
+        "https://res.cloudinary.com/dl7ttedsi/image/upload/v1702961072/gnapljpulhdlyhjmrxmo.jpg"
+    ],
+    "timestamp": "2023-12-19 11:44:37"
+}
+
+{
+    "level": "info",
+    "message": [
+        {
+            "destination": "src/libs/uploads",
+            "encoding": "7bit",
+            "fieldname": "image",
+            "filename": "1702961069554-image.png",
+            "mimetype": "application/octet-stream",
+            "originalname": "Errm53VVcAE05Jb.jfif",
+            "path": "src\\libs\\uploads\\1702961069554-image.png",
+            "size": 255481
+        },
+        {
+            "destination": "src/libs/uploads",
+            "encoding": "7bit",
+            "fieldname": "image",
+            "filename": "1702961069559-image.png",
+            "mimetype": "application/octet-stream",
+            "originalname": "Errm53VU0AI5xgw.jfif",
+            "path": "src\\libs\\uploads\\1702961069559-image.png",
+            "size": 289275
+        },
+        {
+            "destination": "src/libs/uploads",
+            "encoding": "7bit",
+            "fieldname": "image",
+            "filename": "1702961069564-image.png",
+            "mimetype": "application/octet-stream",
+            "originalname": "ErnKjcGVQAEYkNT.jfif",
+            "path": "src\\libs\\uploads\\1702961069564-image.png",
+            "size": 181441
+        }
+    ],
+    "timestamp": "2023-12-19 11:44:37"
+}
+ 
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-19 11:45:40"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-19 11:45:44"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-19 11:46:02"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-19 11:46:05"
+}
+
+{
+    "level": "info",
+    "message": {
+        "exp": 1702968599,
+        "iat": 1702957799,
+        "id": "657d9f709081649f489b75c7"
+    },
+    "timestamp": "2023-12-19 11:46:17"
+}
+
+{
+    "level": "info",
+    "message": [
+        "https://res.cloudinary.com/dl7ttedsi/image/upload/v1702961176/vrrurea5sn1coqqh5okr.jpg",
+        "https://res.cloudinary.com/dl7ttedsi/image/upload/v1702961178/c1ivjnqux2jfsb1r9d1j.jpg",
+        "https://res.cloudinary.com/dl7ttedsi/image/upload/v1702961181/r0nelz4g93v1es41dhsf.jpg"
+    ],
+    "timestamp": "2023-12-19 11:46:26"
+}
+
+{
+    "level": "info",
+    "message": [
+        {
+            "destination": "src/libs/uploads",
+            "encoding": "7bit",
+            "fieldname": "image",
+            "filename": "1702961178227-image.png",
+            "mimetype": "application/octet-stream",
+            "originalname": "Errm53VVcAE05Jb.jfif",
+            "path": "src\\libs\\uploads\\1702961178227-image.png",
+            "size": 255481
+        },
+        {
+            "destination": "src/libs/uploads",
+            "encoding": "7bit",
+            "fieldname": "image",
+            "filename": "1702961178230-image.png",
+            "mimetype": "application/octet-stream",
+            "originalname": "Errm53VU0AI5xgw.jfif",
+            "path": "src\\libs\\uploads\\1702961178230-image.png",
+            "size": 289275
+        },
+        {
+            "destination": "src/libs/uploads",
+            "encoding": "7bit",
+            "fieldname": "image",
+            "filename": "1702961178233-image.png",
+            "mimetype": "application/octet-stream",
+            "originalname": "ErnKjcGVQAEYkNT.jfif",
+            "path": "src\\libs\\uploads\\1702961178233-image.png",
+            "size": 181441
+        }
+    ],
+    "timestamp": "2023-12-19 11:46:26"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-19 12:20:00"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-19 12:20:05"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-19 12:37:07"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-19 12:37:12"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-19 12:37:38"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-19 12:37:40"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-19 12:37:48"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-19 12:37:50"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-19 12:38:07"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-19 12:38:09"
+}
+
+{
+    "level": "info",
+    "message": {
+        "exp": 1702968599,
+        "iat": 1702957799,
+        "id": "657d9f709081649f489b75c7"
+    },
+    "timestamp": "2023-12-19 12:38:29"
+}
+
+{
+    "level": "info",
+    "message": "Deleting local file:",
+    "timestamp": "2023-12-19 12:38:38"
+}
+
+{
+    "code": "ERR_INVALID_ARG_TYPE",
+    "level": "error",
+    "message": "Error deleting local files: The \"path\" argument must be of type string or an instance of Buffer or URL. Received undefined",
+    "stack": "TypeError [ERR_INVALID_ARG_TYPE]: The \"path\" argument must be of type string or an instance of Buffer or URL. Received undefined\n    at Object.unlinkSync (node:fs:1880:10)\n    at D:\\Habib Folder\\01 - DW stage 2\\14 - The Acupunture Needs\\TAN-Backend\\src\\controllers\\productController.ts:68:12\n    at Generator.next (<anonymous>)\n    at fulfilled (D:\\Habib Folder\\01 - DW stage 2\\14 - The Acupunture Needs\\TAN-Backend\\src\\controllers\\productController.ts:5:58)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)",
+    "timestamp": "2023-12-19 12:38:38"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-19 12:40:58"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-19 12:41:01"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-19 12:41:29"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-19 12:41:31"
+}
+
+{
+    "level": "info",
+    "message": {
+        "exp": 1702968599,
+        "iat": 1702957799,
+        "id": "657d9f709081649f489b75c7"
+    },
+    "timestamp": "2023-12-19 12:41:44"
+}
+
+{
+    "level": "info",
+    "message": {
+        "exp": 1702968599,
+        "iat": 1702957799,
+        "id": "657d9f709081649f489b75c7"
+    },
+    "timestamp": "2023-12-19 12:41:58"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-19 12:42:46"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-19 12:42:50"
+}
+
+{
+    "level": "info",
+    "message": {
+        "exp": 1702968599,
+        "iat": 1702957799,
+        "id": "657d9f709081649f489b75c7"
+    },
+    "timestamp": "2023-12-19 12:43:20"
+}
+
+{
+    "level": "info",
+    "message": [
+        "https://res.cloudinary.com/dl7ttedsi/image/upload/v1702964599/f3xcs2lxs7nirijds2jz.jpg",
+        "https://res.cloudinary.com/dl7ttedsi/image/upload/v1702964601/ioqghultrkxbjmprvgjz.jpg",
+        "https://res.cloudinary.com/dl7ttedsi/image/upload/v1702964604/pwqdcjsicibdck0kiunn.jpg"
+    ],
+    "timestamp": "2023-12-19 12:43:30"
+}
+{"level":"info","message":"App running on port 6900...","timestamp":"2023-12-19 12:56:46"}
+{"level":"info","message":"Connection to Atlas successful","timestamp":"2023-12-19 12:56:53"}
+{"level":"info","message":"App running on port 6900...","timestamp":"2023-12-19 12:58:52"}
+{"level":"info","message":"Connection to Atlas successful","timestamp":"2023-12-19 12:58:58"}
+{"level":"info","message":{"exp":1702968599,"iat":1702957799,"id":"657d9f709081649f489b75c7"},"timestamp":"2023-12-19 13:00:00"}
+{"level":"info","message":["https://res.cloudinary.com/dl7ttedsi/image/upload/v1702965602/shhj4niold9tfhtcztj8.jpg","https://res.cloudinary.com/dl7ttedsi/image/upload/v1702965607/po3hvquzwxs00ouq2lp3.jpg"],"timestamp":"2023-12-19 13:00:13"}
+{"level":"info","message":"App running on port 6900...","timestamp":"2023-12-19 13:01:10"}
+{"level":"info","message":"Connection to Atlas successful","timestamp":"2023-12-19 13:01:16"}
+{"level":"info","message":{"exp":1702968599,"iat":1702957799,"id":"657d9f709081649f489b75c7"},"timestamp":"2023-12-19 13:01:21"}
+{"level":"info","message":"App running on port 6900...","timestamp":"2023-12-19 13:03:27"}
+{"level":"info","message":"Connection to Atlas successful","timestamp":"2023-12-19 13:03:33"}
+{"level":"info","message":{"exp":1702968599,"iat":1702957799,"id":"657d9f709081649f489b75c7"},"timestamp":"2023-12-19 13:03:41"}
+{"level":"info","message":{"exp":1702968599,"iat":1702957799,"id":"657d9f709081649f489b75c7"},"timestamp":"2023-12-19 13:03:48"}
+{"level":"info","message":"App running on port 6900...","timestamp":"2023-12-19 13:08:30"}

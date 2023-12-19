@@ -7,7 +7,6 @@ import globalErrorHandler from "./utils/globalErrorHandle";
 import userRouter from "./routes/userRoutes";
 import productRouter from "./routes/productRoutes";
 import ExpressMongoSanitize from "express-mongo-sanitize";
-import { logger } from "./logger/winstonLogger";
 
 const app = express();
 

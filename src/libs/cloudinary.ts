@@ -1,5 +1,5 @@
 import { v2 as cloudinary } from "cloudinary";
-import { logger } from "../logger/winstonLogger";
+import { Request } from "express";
 
 export default new (class CloudinaryConfig {
   upload() {
@@ -10,15 +10,20 @@ export default new (class CloudinaryConfig {
     });
   }
 
-  async destination(image: any) {
-    try {
-      const cloudinaryResponse = await cloudinary.uploader.upload(
-        "src/libs/uploads/" + image
-      );
-      return cloudinaryResponse.secure_url;
-    } catch (error) {
-      logger.error(error);
-      throw error;
+  async destination(req: Request) {
+    const uploadedFiles = [];
+
+    if (req.files && Array.isArray(req.files)) {
+      for (const file of req.files) {
+        const result = await cloudinary.uploader.upload(file.path, {
+          resource_type: "auto",
+          folder: "TAN-Store",
+        });
+        uploadedFiles.push(result.secure_url);
+      }
+    } else {
+      throw new Error("No files uploaded");
     }
+    return uploadedFiles;
   }
 })();

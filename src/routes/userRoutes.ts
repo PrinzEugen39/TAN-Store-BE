@@ -5,12 +5,19 @@ import {
   deleteUser,
   getUser,
 } from "../controllers/userController";
-import { login, signup } from "../controllers/authController";
+import {
+  AuthCheck,
+  login,
+  restrictTo,
+  signup,
+} from "../controllers/authController";
 
 const userRouter = express.Router();
 
 userRouter.route("/login").post(login);
 userRouter.route("/signup").post(signup);
+
+userRouter.use(AuthCheck, restrictTo("admin"));
 
 userRouter.route("/").get(getAllUsers).post(createUser);
 userRouter.route("/:id").get(getUser).delete(deleteUser);

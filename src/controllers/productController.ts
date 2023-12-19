@@ -5,6 +5,8 @@ import APIFeatures from "../utils/APIFeatures";
 import AppError from "../utils/appError";
 import moment from "moment-timezone";
 import cloudinaryConfig from "../libs/cloudinary";
+import fs from "fs";
+import { logger } from "../logger/winstonLogger";
 
 export const getAllProducts = catchAsync(
   async (req: Request, res: Response, _next: NextFunction) => {
@@ -47,25 +49,34 @@ export const getProduct = catchAsync(
 
 export const createProduct = catchAsync(
   async (req: Request, res: Response, _next: NextFunction) => {
-    let image;
     cloudinaryConfig.upload();
-
-    if (res.locals.filename) {
-      image = await cloudinaryConfig.destination(res.locals.filename);
-    }
-    // const files = req.files as Express.Multer.File[];
-    // const image = await Promise.all(
-    //   files.map(async (file: Express.Multer.File) => {
-    //     return await cloudinaryConfig.destination(file.filename);
-    //   })
-    // );
+    const result: any = await cloudinaryConfig.destination(req);
 
     const newProduct = await Product.create({
       ...req.body,
-      image: image ? [image] : [""],
+      image: result,
       createdAt: moment().tz("UTC").toDate(),
       updatedAt: moment().tz("UTC").toDate(),
     });
+
+    if (result.length > 0) {
+      for (let i = 0; i < result.length; i++) {
+        if (Array.isArray(req.files) && req.files[i]) {
+          fs.unlink(
+            `${(req.files[i] as Express.Multer.File).destination}/${
+              (req.files[i] as Express.Multer.File).filename
+            }`,
+            (err) => {
+              if (err) {
+                logger.error("Error deleting file:", err);
+              } else {
+                logger.info("File deleted successfully");
+              }
+            }
+          );
+        }
+      }
+    }
 
     res.status(201).json({
       status: "success",

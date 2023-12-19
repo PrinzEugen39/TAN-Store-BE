@@ -1,4 +1,5 @@
-import { Request, Response } from "express";
+/* eslint-disable indent */
+import { NextFunction, Request, Response } from "express";
 import jwt from "jsonwebtoken";
 import moment from "moment-timezone";
 import catchAsync from "../utils/catchAsync";
@@ -6,18 +7,25 @@ import { config } from "dotenv";
 import User from "../models/userModel";
 import AppError from "../utils/appError";
 import { promisify } from "util";
-
+import { logger } from "../logger/winstonLogger";
 config();
 
-// interface IUser {
-//   _id?: string;
-//   name?: string;
-//   email: string;
-//   password: string | undefined;
-//   passwordConfirm?: string | undefined;
-//   passwordChangedAt?: Date;
-//   role?: string;
-// }
+interface IUser {
+  _id?: string;
+  name?: string;
+  email: string;
+  password: string | undefined;
+  passwordChangedAt?: number | Date | undefined;
+  role?: string;
+}
+
+type UserRole = "admin" | "user";
+
+declare module "express" {
+  export interface Request {
+    user?: IUser;
+  }
+}
 
 interface CookieOptions {
   expires: Date;
@@ -72,10 +80,7 @@ export const login = catchAsync(async (req, res, next) => {
   if (!email || !password) {
     return next(new AppError("Please provide email and password", 400));
   }
-
-  const user = await User.findOne({
-    email: email,
-  });
+  const user = await User.findOne({ email }).select("+password");
 
   if (!user || !(await user.correctPassword(password, user.password))) {
     return next(new AppError("Incorrect email or password", 401));
@@ -83,42 +88,44 @@ export const login = catchAsync(async (req, res, next) => {
   createSendToken(user, 200, res);
 });
 
-// export const AuthCheck = catchAsync(async (req, res, next) => {
-//   // 1) getting token and check if its there
-//   let token;
-//   if (
-//     req.headers.authorization &&
-//     req.headers.authorization.startsWith("Bearer")
-//   ) {
-//     token = req.headers.authorization.split(" ")[1];
-//   }
+export const AuthCheck = catchAsync(async (req, res, next) => {
+  // 1) getting token and check if its there
+  let token;
+  if (
+    req.headers.authorization &&
+    req.headers.authorization.startsWith("Bearer")
+  ) {
+    token = req.headers.authorization.split(" ")[1];
+  }
 
-//   if (!token) {
-//     return next(
-//       new AppError("You are not logged in! Please log in to get access", 401)
-//     );
-//   }
-//   // 2) verification token
-//   const verifyAsync = promisify<string, string>(jwt.verify);
+  if (!token) {
+    return next(
+      new AppError("You are not logged in! Please log in to get access", 401)
+    );
+  }
+  const verifyAsync = promisify<string, string>(jwt.verify);
 
-//   const decoded: any = await verifyAsync(token, process.env["JWT_SECRET"]!);
-//   console.log(decoded);
+  const decoded: any = await verifyAsync(token, process.env["JWT_SECRET"]!);
+  logger.info(decoded);
 
-//   const currentUser = await User.findById(decoded.id);
-//   if (!currentUser) {
-//     return next(
-//       new AppError("The user belonging to this token does no longer exist", 401)
-//     );
-//   }
+  const currentUser = await User.findById(decoded.id);
+  if (!currentUser) {
+    return next(
+      new AppError("The user belonging to this token does no longer exist", 401)
+    );
+  }
+  // Grant access to protected route
+  req.user = currentUser;
+  next();
+});
 
-//   // 3) Check if user changed password after the token was issued
-//   if (currentUser.changePasswordAfter(decoded.iat)) {
-//     return next(
-//       new AppError("User recently changed password! Please log in again", 401)
-//     );
-//   }
-
-//   // Grant access to protected route
-//   req.user = currentUser;
-//   next();
-// });
+export const restrictTo =
+  (...roles: UserRole[]) =>
+  (req: Request, _res: Response, next: NextFunction) => {
+    if (!roles.includes(req.user?.role as UserRole)) {
+      return next(
+        new AppError("You do not have permission to perform this action", 403)
+      );
+    }
+    next();
+  };
