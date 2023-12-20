@@ -8,10 +8,15 @@ import userRouter from "./routes/userRoutes";
 import productRouter from "./routes/productRoutes";
 import ExpressMongoSanitize from "express-mongo-sanitize";
 
+import cors from "cors";
+
+// Enable All CORS Requests for simplicity in development
+
 const app = express();
 
 // GLOBAL MIDDLEWARE
 app.use(helmet());
+app.use(cors());
 
 app.use(ExpressMongoSanitize());
 

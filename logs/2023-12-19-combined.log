@@ -997,19 +997,118 @@
     ],
     "timestamp": "2023-12-19 12:43:30"
 }
-{"level":"info","message":"App running on port 6900...","timestamp":"2023-12-19 12:56:46"}
-{"level":"info","message":"Connection to Atlas successful","timestamp":"2023-12-19 12:56:53"}
-{"level":"info","message":"App running on port 6900...","timestamp":"2023-12-19 12:58:52"}
-{"level":"info","message":"Connection to Atlas successful","timestamp":"2023-12-19 12:58:58"}
-{"level":"info","message":{"exp":1702968599,"iat":1702957799,"id":"657d9f709081649f489b75c7"},"timestamp":"2023-12-19 13:00:00"}
-{"level":"info","message":["https://res.cloudinary.com/dl7ttedsi/image/upload/v1702965602/shhj4niold9tfhtcztj8.jpg","https://res.cloudinary.com/dl7ttedsi/image/upload/v1702965607/po3hvquzwxs00ouq2lp3.jpg"],"timestamp":"2023-12-19 13:00:13"}
-{"level":"info","message":"App running on port 6900...","timestamp":"2023-12-19 13:01:10"}
-{"level":"info","message":"Connection to Atlas successful","timestamp":"2023-12-19 13:01:16"}
-{"level":"info","message":{"exp":1702968599,"iat":1702957799,"id":"657d9f709081649f489b75c7"},"timestamp":"2023-12-19 13:01:21"}
-{"level":"info","message":"App running on port 6900...","timestamp":"2023-12-19 13:03:27"}
-{"level":"info","message":"Connection to Atlas successful","timestamp":"2023-12-19 13:03:33"}
-{"level":"info","message":{"exp":1702968599,"iat":1702957799,"id":"657d9f709081649f489b75c7"},"timestamp":"2023-12-19 13:03:41"}
-{"level":"info","message":{"exp":1702968599,"iat":1702957799,"id":"657d9f709081649f489b75c7"},"timestamp":"2023-12-19 13:03:48"}
-{"level":"info","message":"App running on port 6900...","timestamp":"2023-12-19 13:08:30"}
-{"level":"info","message":"App running on port 6900...","timestamp":"2023-12-19 13:08:36"}
-{"level":"info","message":"Connection to Atlas successful","timestamp":"2023-12-19 13:08:41"}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-19 12:56:46"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-19 12:56:53"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-19 12:58:52"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-19 12:58:58"
+}
+
+{
+    "level": "info",
+    "message": {
+        "exp": 1702968599,
+        "iat": 1702957799,
+        "id": "657d9f709081649f489b75c7"
+    },
+    "timestamp": "2023-12-19 13:00:00"
+}
+
+{
+    "level": "info",
+    "message": [
+        "https://res.cloudinary.com/dl7ttedsi/image/upload/v1702965602/shhj4niold9tfhtcztj8.jpg",
+        "https://res.cloudinary.com/dl7ttedsi/image/upload/v1702965607/po3hvquzwxs00ouq2lp3.jpg"
+    ],
+    "timestamp": "2023-12-19 13:00:13"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-19 13:01:10"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-19 13:01:16"
+}
+
+{
+    "level": "info",
+    "message": {
+        "exp": 1702968599,
+        "iat": 1702957799,
+        "id": "657d9f709081649f489b75c7"
+    },
+    "timestamp": "2023-12-19 13:01:21"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-19 13:03:27"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-19 13:03:33"
+}
+
+{
+    "level": "info",
+    "message": {
+        "exp": 1702968599,
+        "iat": 1702957799,
+        "id": "657d9f709081649f489b75c7"
+    },
+    "timestamp": "2023-12-19 13:03:41"
+}
+
+{
+    "level": "info",
+    "message": {
+        "exp": 1702968599,
+        "iat": 1702957799,
+        "id": "657d9f709081649f489b75c7"
+    },
+    "timestamp": "2023-12-19 13:03:48"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-19 13:08:30"
+}
+
+{
+    "level": "info",
+    "message": "App running on port 6900...",
+    "timestamp": "2023-12-19 13:08:36"
+}
+
+{
+    "level": "info",
+    "message": "Connection to Atlas successful",
+    "timestamp": "2023-12-19 13:08:41"
+}
