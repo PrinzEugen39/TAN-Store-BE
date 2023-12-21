@@ -34,6 +34,11 @@
             "date": 1703049929804,
             "name": "logs\\exceptions-2023-12-20.log",
             "hash": "3a79b602ec2ed220680768b7c485eeacafe06ce6d1b225d4fb2046f9d5bb7868"
+        },
+        {
+            "date": 1703110022974,
+            "name": "logs\\exceptions-2023-12-21.log",
+            "hash": "4719dd3f2aadfc03661e7acf31f852c053aee590e4f1c9688dacaa28d5145521"
         }
     ],
     "hashType": "sha256"

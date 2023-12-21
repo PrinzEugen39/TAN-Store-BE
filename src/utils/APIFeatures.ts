@@ -1,3 +1,5 @@
+import validator from "validator";
+
 class APIFeatures {
   query: any;
   queryString: any;
@@ -10,6 +12,15 @@ class APIFeatures {
     const queryObj = { ...this.queryString };
     const excludedFields = ["page", "sort", "limit", "fields"];
     excludedFields.forEach((el) => delete queryObj[el]);
+
+    if (queryObj.name !== undefined) {
+      const nameRegex = queryObj.name.trim();
+      if (nameRegex !== "") {
+        queryObj.name = { $regex: nameRegex, $options: "i" };
+      } else {
+        delete queryObj.name;
+      }
+    }
 
     let queryStr = JSON.stringify(queryObj);
     queryStr = queryStr.replace(/\b(gte|gt|lte|lt)\b/g, (match) => `$${match}`);
@@ -45,8 +56,8 @@ class APIFeatures {
   }
 
   paginate() {
-    const page = Number(this.queryString.page) || 1;
-    const limit = Number(this.queryString.limit) || 10;
+    const page = Number(this.queryString.page);
+    const limit = Number(this.queryString.limit);
     const skip = (page - 1) * limit;
     // page=3&limit=10 1-10, 11-20, 21-30
     this.query = this.query.skip(skip).limit(limit);
