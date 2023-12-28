@@ -4,6 +4,7 @@ import {
   getAllUsers,
   deleteUser,
   getUser,
+  getMe,
 } from "../controllers/userController";
 import {
   AuthCheck,
@@ -17,7 +18,11 @@ const userRouter = express.Router();
 userRouter.route("/login").post(login);
 userRouter.route("/signup").post(signup);
 
-userRouter.use(AuthCheck, restrictTo("admin"));
+userRouter.use(AuthCheck);
+
+userRouter.get("/me", getMe, getUser);
+
+userRouter.use(restrictTo("admin"));
 
 userRouter.route("/").get(getAllUsers).post(createUser);
 userRouter.route("/:id").get(getUser).delete(deleteUser);

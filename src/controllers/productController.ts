@@ -1,12 +1,13 @@
 import { NextFunction, Request, Response } from "express";
-import Product from "../models/productModel";
-import catchAsync from "../utils/catchAsync";
+import fs from "fs";
+import moment from "moment-timezone";
+import slugify from "slugify";
+import cloudinaryConfig from "../libs/cloudinary";
+import { logger } from "../logger/winstonLogger";
+import Product, { IProduct } from "../models/productModel";
 import APIFeatures from "../utils/APIFeatures";
 import AppError from "../utils/appError";
-import moment from "moment-timezone";
-import cloudinaryConfig from "../libs/cloudinary";
-import fs from "fs";
-import { logger } from "../logger/winstonLogger";
+import catchAsync from "../utils/catchAsync";
 
 export const getAllProducts = catchAsync(
   async (req: Request, res: Response, _next: NextFunction) => {
@@ -23,6 +24,28 @@ export const getAllProducts = catchAsync(
       results: products.length,
       data: {
         products,
+      },
+    });
+  }
+);
+
+export const getProductbySlug = catchAsync(
+  async (req: Request, res: Response, next: NextFunction) => {
+    const product = await Product.findOne({ slug: req.params.slug });
+
+    if (!product) {
+      return next(
+        new AppError(
+          `No product found with slug name of ${req.params.slug}`,
+          404
+        )
+      );
+    }
+
+    return res.status(200).json({
+      status: "success",
+      data: {
+        product: product,
       },
     });
   }
@@ -47,14 +70,37 @@ export const getProduct = catchAsync(
   }
 );
 
+export const duplicateCheck = catchAsync(
+  async (req: Request, res: Response, next: NextFunction) => {
+    console.log("Masuk");
+    console.log(req.body);
+    const existingProduct = await Product.findOne({ name: req.body.name });
+    if (existingProduct) {
+      return res
+        .status(400)
+        .json({ error: "Product with this name already exists" });
+    }
+    // if (existingProduct) {
+    //   return next(new AppError("Duplicate FOund", 400));
+    // }
+  }
+);
+
 export const createProduct = catchAsync(
-  async (req: Request, res: Response, _next: NextFunction) => {
+  async (req: Request, res: Response, next: NextFunction) => {
+    const existingProduct = await Product.findOne({ name: req.body.name });
+    if (existingProduct) {
+      return next(
+        new AppError(`Product with ${existingProduct.name} already exist`, 400)
+      );
+    }
     cloudinaryConfig.upload();
-    const result: any = await cloudinaryConfig.destination(req);
+    const result: string[] = await cloudinaryConfig.destination(req);
 
     const newProduct = await Product.create({
       ...req.body,
       image: result,
+      slug: slugify(req.body.name, { lower: true }),
       createdAt: moment().tz("UTC").toDate(),
       updatedAt: moment().tz("UTC").toDate(),
     });
@@ -111,12 +157,23 @@ export const updateProduct = catchAsync(
 
 export const deleteProduct = catchAsync(
   async (req: Request, res: Response, next: NextFunction) => {
-    const product = await Product.findByIdAndDelete(req.params.id);
+    const product: IProduct | null = await Product.findByIdAndDelete(
+      req.params.id
+    ).lean();
 
     if (!product) {
       return next(
         new AppError(`No product found with ID ${req.params.id}`, 404)
       );
+    }
+
+    const imagesToDelete = product.image.map((image) => {
+      const imageURL = image.split("/").pop()?.split(".")[0];
+      return `TAN-Store/${imageURL}`;
+    });
+
+    if (imagesToDelete.length > 0) {
+      await cloudinaryConfig.deleteImages(imagesToDelete);
     }
 
     res.status(204).json({

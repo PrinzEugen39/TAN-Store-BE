@@ -1,5 +1,3 @@
-import validator from "validator";
-
 class APIFeatures {
   query: any;
   queryString: any;

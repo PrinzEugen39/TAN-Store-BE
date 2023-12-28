@@ -1,7 +1,8 @@
 import moment from "moment-timezone";
 import mongoose, { Query } from "mongoose";
+import AppError from "../utils/appError";
 
-interface IProduct {
+export interface IProduct {
   name: string;
   price: number;
   description: string;
@@ -9,11 +10,12 @@ interface IProduct {
   qty: number;
   createdAt: Date;
   updatedAt: Date;
+  slug: string;
 }
 
 export interface IProductDoc extends IProduct, mongoose.Document {}
 
-const productSchema: mongoose.Schema = new mongoose.Schema(
+const productSchema: mongoose.Schema<IProductDoc> = new mongoose.Schema(
   {
     name: {
       type: String,
@@ -43,6 +45,7 @@ const productSchema: mongoose.Schema = new mongoose.Schema(
       type: Number,
       default: 1,
     },
+    slug: String,
     createdAt: Date,
     updatedAt: Date,
   },
@@ -52,14 +55,26 @@ const productSchema: mongoose.Schema = new mongoose.Schema(
   }
 );
 
-const Product = mongoose.model<IProductDoc>("Product", productSchema);
+productSchema.pre("save", async function (this: IProductDoc, next) {
+  try {
+    const existingProduct = await Product.findOne({ name: this.name });
+    if (existingProduct) {
+      return next(new AppError("Product already exists", 400));
+    }
+    next();
+  } catch (error: any) {
+    next(error);
+  }
+});
 
 productSchema.pre(
   "findOneAndUpdate",
-  function (this: Query<IProductDoc, IProductDoc>, next: any) {
+  function (this: Query<IProductDoc, IProductDoc>, next) {
     this.set({ updatedAt: moment().tz("UTC").toDate() });
     next();
   }
 );
+
+const Product = mongoose.model<IProductDoc>("Product", productSchema);
 
 export default Product;

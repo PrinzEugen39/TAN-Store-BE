@@ -1,24 +1,49 @@
 import { NextFunction, Request, Response } from "express";
-import multer from "multer";
+import multer, { FileFilterCallback } from "multer";
+import Product from "../models/productModel";
 
 const UploadFile = (fieldName: string) => {
   const storage = multer.diskStorage({
-    destination: (req, res, cb) => {
+    destination: (_req: Request, _file: Express.Multer.File, cb) => {
       cb(null, "src/libs/uploads");
     },
-    filename: (req, file, cb) => {
+    filename: (_req: Request, file: Express.Multer.File, cb) => {
       cb(null, `${Date.now()}-${file.fieldname}.png`);
     },
   });
+
+  const fileFilter = (
+    req: Request,
+    file: Express.Multer.File,
+    cb: FileFilterCallback
+  ) => {
+    if (
+      file.mimetype == "image/png" ||
+      file.mimetype == "image/jpg" ||
+      file.mimetype == "image/jpeg"
+    ) {
+      cb(null, true);
+    } else {
+      cb(null, false);
+      return cb(new Error("Only .png, .jpg and .jpeg format allowed!"));
+    }
+    Product.findOne({ name: req.body.name }).then((user) => {
+      if (user) {
+        cb(null, false);
+        return cb(new Error("Only .png, .jpg and .jpeg format allowed!"));
+      }
+    });
+  };
 
   const uploadFile = multer({
     storage: storage,
     limits: {
       fileSize: 1024 * 1024 * 5,
     },
+    fileFilter: fileFilter,
   });
 
-  return (req: Request, res: Response, next: NextFunction) => {
+  return async (req: Request, res: Response, next: NextFunction) => {
     uploadFile.array(fieldName, 4)(req, res, function (err: any) {
       if (err) {
         return res.status(400).json({ Error: `${err}` });

@@ -1,5 +1,6 @@
 import { v2 as cloudinary } from "cloudinary";
 import { Request } from "express";
+import { logger } from "../logger/winstonLogger";
 
 export default new (class CloudinaryConfig {
   upload() {
@@ -25,5 +26,19 @@ export default new (class CloudinaryConfig {
       throw new Error("No files uploaded");
     }
     return uploadedFiles;
+  }
+
+  async deleteImages(imageURL: string[]) {
+    const result = await cloudinary.api.delete_resources(imageURL, {
+      type: "upload",
+      resource_type: "image",
+    });
+
+    logger.info(result);
+    // if (imageURL.length > 0) {
+    //   for (const url of imageURL) {
+    //     await cloudinary.uploader.destroy(url);
+    //   }
+    // }
   }
 })();
