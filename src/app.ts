@@ -7,6 +7,7 @@ import globalErrorHandler from "./utils/globalErrorHandle";
 import userRouter from "./routes/userRoutes";
 import productRouter from "./routes/productRoutes";
 import ExpressMongoSanitize from "express-mongo-sanitize";
+import cookieParser from "cookie-parser";
 
 import cors from "cors";
 import cartRouter from "./routes/cartRouter";
@@ -17,9 +18,15 @@ const app = express();
 
 // GLOBAL MIDDLEWARE
 app.use(helmet());
-app.use(cors());
+app.use(
+  cors({
+    origin: "http://localhost:5173",
+    credentials: true,
+  })
+);
 
 app.use(ExpressMongoSanitize());
+app.use(cookieParser());
 
 if (process.env["NODE_ENV"] === "development") {
   app.use(morgan("dev"));

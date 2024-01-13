@@ -27,6 +27,7 @@ const cartSchema = new mongoose.Schema(
       type: Number,
       default: 1,
     },
+    unitPrice: Number,
     totalPrice: Number,
   },
   {
@@ -41,20 +42,48 @@ const cartSchema = new mongoose.Schema(
 
 cartSchema.index({ user: 1, product: 1 }, { unique: true });
 
-// cartSchema.pre<ICartDoc>(/^find/, function (next) {
-//   this.populate({
-//     path: "user",
-//     select: "name",
-//   });
-//   next();
-// });
-
 cartSchema.pre<ICartDoc>(/^find/, function (next) {
   this.populate({
     path: "product",
     select: "name description image",
   });
   next();
+});
+
+cartSchema.statics.calcTotalPrice = async function (cartID) {
+  const total = await this.aggregate([
+    {
+      $match: { _id: cartID },
+    },
+    {
+      $group: {
+        _id: "$_id",
+        nQty: { $sum: "$qty" },
+        nUnitPrice: { $sum: "$unitPrice" },
+        calcTotalPrice: { $sum: { $multiply: ["$qty", "$unitPrice"] } },
+      },
+    },
+  ]);
+  console.log("init toal", total);
+
+  if (total[0].calcTotalPrice) {
+    await Cart.findByIdAndUpdate(cartID, {
+      totalPrice: total[0].calcTotalPrice,
+    });
+  }
+};
+
+cartSchema.post<any>("save", async function () {
+  this.constructor.calcTotalPrice(this._id);
+});
+
+cartSchema.pre<any>("findOneAndUpdate", async function (next) {
+  this.t = await this.clone().findOne();
+  next();
+});
+
+cartSchema.post<any>("findOneAndUpdate", async function () {
+  await this.t.constructor.calcTotalPrice(this.t._id);
 });
 
 const Cart = mongoose.model<ICartDoc>("Cart", cartSchema);

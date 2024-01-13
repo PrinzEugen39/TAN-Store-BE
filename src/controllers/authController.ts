@@ -88,36 +88,49 @@ export const login = catchAsync(async (req, res, next) => {
   createSendToken(user, 200, res);
 });
 
-export const AuthCheck = catchAsync(async (req, res, next) => {
-  // 1) getting token and check if its there
-  let token;
-  if (
-    req.headers.authorization &&
-    req.headers.authorization.startsWith("Bearer")
-  ) {
-    token = req.headers.authorization.split(" ")[1];
-  }
+export const logout = (req: Request, res: Response) => {
+  console.log(req.cookies);
+  res.clearCookie("jwt");
+  res.status(200).json({ status: "success" });
+};
 
-  if (!token) {
-    return next(
-      new AppError("You are not logged in! Please log in to get access", 401)
-    );
-  }
-  const verifyAsync = promisify<string, string>(jwt.verify);
+export const AuthCheck = catchAsync(
+  async (req: Request, res: Response, next: NextFunction) => {
+    // 1) getting token and check if its there
+    let token;
+    if (
+      req.headers.authorization &&
+      req.headers.authorization.startsWith("Bearer")
+    ) {
+      token = req.headers.authorization.split(" ")[1];
+    } else if (req.cookies.jwt) {
+      token = req.cookies.jwt;
+    }
 
-  const decoded: any = await verifyAsync(token, process.env["JWT_SECRET"]!);
-  logger.info(decoded);
+    if (!token) {
+      return next(
+        new AppError("You are not logged in! Please log in to get access", 401)
+      );
+    }
+    const verifyAsync = promisify<string, string>(jwt.verify);
 
-  const currentUser = await User.findById(decoded.id);
-  if (!currentUser) {
-    return next(
-      new AppError("The user belonging to this token does no longer exist", 401)
-    );
+    const decoded: any = await verifyAsync(token, process.env["JWT_SECRET"]!);
+    logger.info(decoded);
+
+    const currentUser = await User.findById(decoded.id);
+    if (!currentUser) {
+      return next(
+        new AppError(
+          "The user belonging to this token does no longer exist",
+          401
+        )
+      );
+    }
+    // Grant access to protected route
+    req.user = currentUser;
+    next();
   }
-  // Grant access to protected route
-  req.user = currentUser;
-  next();
-});
+);
 
 export const restrictTo =
   (...roles: UserRole[]) =>

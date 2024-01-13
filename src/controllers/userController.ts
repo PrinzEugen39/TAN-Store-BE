@@ -75,3 +75,14 @@ export const getMe = catchAsync(
     next();
   }
 );
+
+export const getAuth = catchAsync(
+  async (req: Request, res: Response, next: NextFunction) => {
+    res.status(200).json({
+      status: "auth success",
+      data: {
+        user: req.user,
+      },
+    });
+  }
+);

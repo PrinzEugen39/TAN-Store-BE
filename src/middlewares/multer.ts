@@ -1,6 +1,7 @@
 import { NextFunction, Request, Response } from "express";
 import multer, { FileFilterCallback } from "multer";
 import Product from "../models/productModel";
+import AppError from "../utils/appError";
 
 const UploadFile = (fieldName: string) => {
   const storage = multer.diskStorage({
@@ -24,8 +25,7 @@ const UploadFile = (fieldName: string) => {
     ) {
       cb(null, true);
     } else {
-      cb(null, false);
-      return cb(new Error("Only .png, .jpg and .jpeg format allowed!"));
+      return cb(new AppError("Only .png, .jpg and .jpeg format allowed!", 400));
     }
     Product.findOne({ name: req.body.name }).then((user) => {
       if (user) {
@@ -46,7 +46,9 @@ const UploadFile = (fieldName: string) => {
   return async (req: Request, res: Response, next: NextFunction) => {
     uploadFile.array(fieldName, 4)(req, res, function (err: any) {
       if (err) {
-        return res.status(400).json({ Error: `${err}` });
+        return res
+          .status(400)
+          .json({ Error: `${err}`, Detail: "Maximum of 4 images are allowed" });
       }
       next();
     });

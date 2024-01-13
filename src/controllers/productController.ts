@@ -70,22 +70,6 @@ export const getProduct = catchAsync(
   }
 );
 
-export const duplicateCheck = catchAsync(
-  async (req: Request, res: Response, next: NextFunction) => {
-    console.log("Masuk");
-    console.log(req.body);
-    const existingProduct = await Product.findOne({ name: req.body.name });
-    if (existingProduct) {
-      return res
-        .status(400)
-        .json({ error: "Product with this name already exists" });
-    }
-    // if (existingProduct) {
-    //   return next(new AppError("Duplicate FOund", 400));
-    // }
-  }
-);
-
 export const createProduct = catchAsync(
   async (req: Request, res: Response, next: NextFunction) => {
     const existingProduct = await Product.findOne({ name: req.body.name });
