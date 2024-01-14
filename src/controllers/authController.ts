@@ -8,6 +8,7 @@ import User from "../models/userModel";
 import AppError from "../utils/appError";
 import { promisify } from "util";
 import { logger } from "../logger/winstonLogger";
+import Email from "../utils/Email/email";
 config();
 
 interface IUser {
@@ -70,6 +71,8 @@ export const signup = catchAsync(async (req: Request, res: Response, _next) => {
     passwordChangedAt: moment().tz("UTC").toDate(),
     role: req.body.role,
   });
+
+  await new Email({ email: newUser.email, name: newUser.name }).signUpEmail();
 
   createSendToken(newUser, 201, res);
 });

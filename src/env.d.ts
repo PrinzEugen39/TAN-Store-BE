@@ -12,6 +12,11 @@ declare global {
       CLOUDINARY_NAME: string;
       CLOUDINARY_KEY: string;
       CLOUDINARY_SECRET: string;
+      EMAIL_FROM: string;
+      EMAIL_PASSWORD: string;
+      EMAIL_USERNAME: string;
+      EMAIL_HOST: string;
+      EMAIL_PORT: string;
     }
   }
 }
