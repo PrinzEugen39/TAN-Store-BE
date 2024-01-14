@@ -72,7 +72,12 @@ export const signup = catchAsync(async (req: Request, res: Response, _next) => {
     role: req.body.role,
   });
 
-  await new Email({ email: newUser.email, name: newUser.name }).signUpEmail();
+  const url = `${req.protocol}://${req.get("host")}/me`;
+
+  await new Email(
+    { email: newUser.email, name: newUser.name },
+    url
+  ).signUpEmail();
 
   createSendToken(newUser, 201, res);
 });

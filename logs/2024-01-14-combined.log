@@ -188,3 +188,13 @@
 {"level":"info","message":"App running on port 6900...","timestamp":"2024-01-14 20:27:26"}
 {"level":"info","message":"Connection to Atlas successful","timestamp":"2024-01-14 20:27:28"}
 {"level":"info","message":"Email sent","timestamp":"2024-01-14 20:27:40"}
+{"level":"info","message":"Email sent","timestamp":"2024-01-14 20:34:06"}
+{"level":"info","message":{"exp":1705250189,"iat":1705239389,"id":"65a3d9761a16352d642078f2"},"timestamp":"2024-01-14 20:36:36"}
+{"level":"info","message":{"exp":1705250189,"iat":1705239389,"id":"65a3d9761a16352d642078f2"},"timestamp":"2024-01-14 20:36:36"}
+{"level":"info","message":{"exp":1705250189,"iat":1705239389,"id":"65a3d9761a16352d642078f2"},"timestamp":"2024-01-14 20:37:24"}
+{"level":"info","message":{"exp":1705250189,"iat":1705239389,"id":"65a3d9761a16352d642078f2"},"timestamp":"2024-01-14 20:37:24"}
+{"level":"info","message":{"exp":1705251095,"iat":1705240295,"id":"657d9f859081649f489b75ca"},"timestamp":"2024-01-14 20:51:46"}
+{"level":"info","message":{"exp":1705251145,"iat":1705240345,"id":"657d9f859081649f489b75ca"},"timestamp":"2024-01-14 20:52:33"}
+{"level":"info","message":{"exp":1705251145,"iat":1705240345,"id":"657d9f859081649f489b75ca"},"timestamp":"2024-01-14 20:52:33"}
+{"level":"info","message":{"exp":1705251167,"iat":1705240367,"id":"657d9f859081649f489b75ca"},"timestamp":"2024-01-14 20:52:49"}
+{"level":"info","message":{"exp":1705251167,"iat":1705240367,"id":"657d9f859081649f489b75ca"},"timestamp":"2024-01-14 20:52:49"}

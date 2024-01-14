@@ -22,12 +22,16 @@ async function Mongoose() {
 
 Mongoose().catch((err) => {
   logger.error("Mongoose connection error", { error: err });
+  process.exit(1);
 });
 
 const port = process.env["PORT"] || 3000;
 
 const server = app.listen(port, () => {
   logger.info(`App running on port ${port}...`);
+  if (process.env.NODE_ENV === "production") {
+    logger.info("Production mode");
+  }
 });
 
 process.on("unhandledRejection", (err: any) => {
