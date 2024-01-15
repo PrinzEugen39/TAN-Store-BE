@@ -9,6 +9,8 @@ import AppError from "../utils/appError";
 import { promisify } from "util";
 import { logger } from "../logger/winstonLogger";
 import Email from "../utils/Email/email";
+import Token from "../models/tokenModel";
+import crypto from "crypto";
 config();
 
 interface IUser {
@@ -62,25 +64,40 @@ const createSendToken = (user: any, statusCode: number, res: Response) => {
   });
 };
 
-export const signup = catchAsync(async (req: Request, res: Response, _next) => {
-  const newUser = await User.create({
-    name: req.body.name,
-    email: req.body.email,
-    password: req.body.password,
-    passwordConfirm: req.body.passwordConfirm,
-    passwordChangedAt: moment().tz("UTC").toDate(),
-    role: req.body.role,
-  });
+export const signup = catchAsync(
+  async (req: Request, res: Response, next: NextFunction) => {
+    const newUser = await User.create({
+      name: req.body.name,
+      email: req.body.email,
+      password: req.body.password,
+      passwordConfirm: req.body.passwordConfirm,
+      passwordChangedAt: moment().tz("UTC").toDate(),
+      role: req.body.role,
+      isVerified: false,
+    });
 
-  const url = `${req.protocol}://${req.get("host")}/me`;
+    const token = await new Token({
+      userId: newUser._id,
+      token: crypto.randomBytes(32).toString("hex"),
+    }).save();
 
-  await new Email(
-    { email: newUser.email, name: newUser.name },
-    url
-  ).signUpEmail();
+    const url = `http://localhost:5173/${newUser.id}/verify/${token.token}`;
 
-  createSendToken(newUser, 201, res);
-});
+    await new Email(
+      { email: newUser.email, name: newUser.name },
+      url
+    ).signUpEmail();
+
+    res.status(201).json({
+      status: "success",
+      message:
+        "A verification email has been sent into your account, please verify",
+      data: {
+        user: newUser,
+      },
+    });
+  }
+);
 
 export const login = catchAsync(async (req, res, next) => {
   const { email, password } = req.body;
@@ -92,6 +109,10 @@ export const login = catchAsync(async (req, res, next) => {
 
   if (!user || !(await user.correctPassword(password, user.password))) {
     return next(new AppError("Incorrect email or password", 401));
+  }
+
+  if (!user.isVerified) {
+    return next(new AppError("Please verify your account", 401));
   }
   createSendToken(user, 200, res);
 });
@@ -150,3 +171,32 @@ export const restrictTo =
     }
     next();
   };
+
+export const verifyEmail = catchAsync(
+  async (req: Request, res: Response, next: NextFunction) => {
+    const user = await User.findOne({
+      _id: req.params.id,
+    });
+
+    if (!user) {
+      return next(new AppError("Invalid Link", 404));
+    }
+
+    const token = await Token.findOne({
+      userId: user._id,
+      token: req.params.token,
+    });
+
+    if (!token) {
+      return next(new AppError("Invalid Link", 404));
+    }
+
+    await User.updateOne({ _id: user._id }, { isVerified: true });
+    await Token.deleteOne({ userId: user._id, token: req.params.token });
+
+    res.status(200).json({
+      status: "success",
+      message: "Email verified successfully",
+    });
+  }
+);

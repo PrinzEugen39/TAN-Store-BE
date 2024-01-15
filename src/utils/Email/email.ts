@@ -43,6 +43,7 @@ export default class Email {
     const template = pug.renderFile("views/welcome.pug", {
       firstName: this.name,
       subject,
+      url: this.url,
     });
 
     const mailOptions = {

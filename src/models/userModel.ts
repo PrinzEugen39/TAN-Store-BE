@@ -13,6 +13,7 @@ export interface IUser {
   passwordChangedAt?: Date | number;
   passwordResetToken?: string;
   passwordResetExpires?: Date;
+  isVerified?: boolean;
 }
 
 export interface IUserDocument extends Document, IUser {
@@ -68,6 +69,7 @@ const userSchema = new mongoose.Schema<IUserDocument>(
     },
     passwordResetToken: String,
     passwordResetExpires: Date,
+    isVerified: Boolean,
   },
   {
     versionKey: false,

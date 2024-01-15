@@ -18,8 +18,8 @@ import {
 const userRouter = express.Router();
 
 userRouter.get("/logout", logout);
-userRouter.route("/login").post(login);
-userRouter.route("/signup").post(signup);
+userRouter.post("/login", login);
+userRouter.post("/signup", signup);
 
 userRouter.use(AuthCheck);
 

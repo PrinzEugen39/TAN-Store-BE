@@ -11,6 +11,7 @@ import cookieParser from "cookie-parser";
 
 import cors from "cors";
 import cartRouter from "./routes/cartRouter";
+import authRouter from "./routes/authRoutes";
 
 // Enable All CORS Requests for simplicity in development
 
@@ -50,6 +51,7 @@ app.use(
 app.use("/api/v1/products", productRouter);
 app.use("/api/v1/users", userRouter);
 app.use("/api/v1/cart", cartRouter);
+app.use("/api/v1/auth", authRouter);
 
 // ERROR ROUTES
 app.all("*", (req: Request, _res: Response, next: NextFunction) => {
