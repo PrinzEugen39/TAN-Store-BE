@@ -131,3 +131,43 @@
 {"level":"info","message":{"exp":1705290520,"iat":1705279720,"id":"65a4807355ecb1b6bf1ad484"},"timestamp":"2024-01-15 07:56:37"}
 {"level":"info","message":"Email sent","timestamp":"2024-01-15 08:03:31"}
 {"level":"info","message":"Email sent","timestamp":"2024-01-15 08:04:18"}
+{"level":"info","message":"App running on port 6900...","timestamp":"2024-01-15 08:24:25"}
+{"level":"info","message":"Production mode","timestamp":"2024-01-15 08:24:25"}
+{"level":"info","message":"Connection to Atlas successful","timestamp":"2024-01-15 08:24:26"}
+{"level":"info","message":{"exp":1705291510,"iat":1705280710,"id":"65a4848e0082179121af27c1"},"timestamp":"2024-01-15 08:24:47"}
+{"level":"info","message":{"exp":1705291510,"iat":1705280710,"id":"65a4848e0082179121af27c1"},"timestamp":"2024-01-15 08:24:47"}
+{"level":"info","message":"Email sent","timestamp":"2024-01-15 08:25:24"}
+{"level":"info","message":{"exp":1705291510,"iat":1705280710,"id":"65a4848e0082179121af27c1"},"timestamp":"2024-01-15 08:25:36"}
+{"level":"info","message":{"exp":1705291510,"iat":1705280710,"id":"65a4848e0082179121af27c1"},"timestamp":"2024-01-15 08:25:36"}
+{"level":"info","message":"App running on port 6900...","timestamp":"2024-01-15 09:48:29"}
+{"level":"info","message":"Production mode","timestamp":"2024-01-15 09:48:29"}
+{"level":"info","message":"Connection to Atlas successful","timestamp":"2024-01-15 09:48:33"}
+{"level":"info","message":{"exp":1705292744,"iat":1705281944,"id":"65a48981081a3ebdde1221c3"},"timestamp":"2024-01-15 09:48:41"}
+{"level":"info","message":{"exp":1705292744,"iat":1705281944,"id":"65a48981081a3ebdde1221c3"},"timestamp":"2024-01-15 09:48:41"}
+{"level":"info","message":"Email sent","timestamp":"2024-01-15 09:50:08"}
+{"level":"info","message":"Email sent","timestamp":"2024-01-15 09:51:03"}
+{"level":"info","message":{"exp":1705297948,"iat":1705287148,"id":"65a49d91db70953190fcbb3d"},"timestamp":"2024-01-15 09:54:18"}
+{"level":"info","message":{"exp":1705297948,"iat":1705287148,"id":"65a49d91db70953190fcbb3d"},"timestamp":"2024-01-15 09:54:20"}
+{"level":"info","message":"App running on port 6900...","timestamp":"2024-01-15 10:32:22"}
+{"level":"info","message":"Connection to Atlas successful","timestamp":"2024-01-15 10:32:25"}
+{"level":"info","message":"App running on port 6900...","timestamp":"2024-01-15 11:08:29"}
+{"level":"info","message":"Production mode","timestamp":"2024-01-15 11:08:29"}
+{"level":"info","message":"Connection to Atlas successful","timestamp":"2024-01-15 11:08:33"}
+{"level":"info","message":"Email sent","timestamp":"2024-01-15 11:09:49"}
+{"level":"info","message":"App running on port 6900...","timestamp":"2024-01-15 19:04:15"}
+{"level":"info","message":"Production mode","timestamp":"2024-01-15 19:04:15"}
+{"level":"info","message":"Connection to Atlas successful","timestamp":"2024-01-15 19:04:18"}
+{"level":"info","message":"Email sent","timestamp":"2024-01-15 19:06:13"}
+{"level":"info","message":"App running on port 6900...","timestamp":"2024-01-15 19:06:46"}
+{"level":"info","message":"Production mode","timestamp":"2024-01-15 19:06:46"}
+{"level":"info","message":"Connection to Atlas successful","timestamp":"2024-01-15 19:06:49"}
+{"level":"info","message":{"exp":1705331624,"iat":1705320824,"id":"657d9f859081649f489b75ca"},"timestamp":"2024-01-15 19:13:51"}
+{"level":"info","message":{"exp":1705331624,"iat":1705320824,"id":"657d9f859081649f489b75ca"},"timestamp":"2024-01-15 19:15:58"}
+{"level":"info","message":"App running on port 6900...","timestamp":"2024-01-15 19:16:55"}
+{"level":"info","message":"Connection to Atlas successful","timestamp":"2024-01-15 19:16:59"}
+{"level":"info","message":{"exp":1705331624,"iat":1705320824,"id":"657d9f859081649f489b75ca"},"timestamp":"2024-01-15 19:17:29"}
+{"level":"info","message":"App running on port 6900...","timestamp":"2024-01-15 19:18:35"}
+{"level":"info","message":"Connection to Atlas successful","timestamp":"2024-01-15 19:18:38"}
+{"level":"info","message":{"exp":1705331624,"iat":1705320824,"id":"657d9f859081649f489b75ca"},"timestamp":"2024-01-15 19:19:21"}
+{"level":"info","message":"App running on port 6900...","timestamp":"2024-01-15 19:22:20"}
+{"level":"info","message":"Connection to Atlas successful","timestamp":"2024-01-15 19:22:23"}

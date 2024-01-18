@@ -1,0 +1,10 @@
+{"level":"info","message":"App running on port 6900...","timestamp":"2024-01-18 20:04:29"}
+{"level":"info","message":"Connection to Atlas successful","timestamp":"2024-01-18 20:04:32"}
+{"level":"info","message":{"exp":1705593903,"iat":1705583103,"id":"657d9f859081649f489b75ca"},"timestamp":"2024-01-18 20:05:12"}
+{"level":"info","message":{"exp":1705593903,"iat":1705583103,"id":"657d9f859081649f489b75ca"},"timestamp":"2024-01-18 20:05:48"}
+{"level":"info","message":{"exp":1705593903,"iat":1705583103,"id":"657d9f859081649f489b75ca"},"timestamp":"2024-01-18 20:06:39"}
+{"level":"info","message":"App running on port 6900...","timestamp":"2024-01-18 20:37:44"}
+{"level":"info","message":"Production mode","timestamp":"2024-01-18 20:37:44"}
+{"error":{"code":"ECONNREFUSED","hostname":"_mongodb._tcp.tanstore.13fc4lw.mongodb.net","syscall":"querySrv"},"level":"error","message":"Mongoose connection error","timestamp":"2024-01-18 20:37:44"}
+{"level":"info","message":"App running on port 6900...","timestamp":"2024-01-18 20:41:39"}
+{"level":"info","message":"Production mode","timestamp":"2024-01-18 20:41:39"}

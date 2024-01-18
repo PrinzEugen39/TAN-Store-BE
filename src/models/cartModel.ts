@@ -22,6 +22,7 @@ const cartSchema = new mongoose.Schema(
       type: mongoose.Schema.ObjectId,
       ref: "Product",
       required: [true, "Cart must have at least one product!"],
+      unique: true,
     },
     qty: {
       type: Number,
@@ -77,13 +78,19 @@ cartSchema.post<any>("save", async function () {
   this.constructor.calcTotalPrice(this._id);
 });
 
-cartSchema.pre<any>("findOneAndUpdate", async function (next) {
-  this.t = await this.clone().findOne();
-  next();
-});
+// cartSchema.pre<any>("findOneAndUpdate", async function (next) {
+//   this.t = await this.clone().findOne();
+//   next();
+// });
 
-cartSchema.post<any>("findOneAndUpdate", async function () {
-  await this.t.constructor.calcTotalPrice(this.t._id);
+// cartSchema.post<any>("findOneAndUpdate", async function () {
+//   await this.t.constructor.calcTotalPrice(this.t._id);
+// });
+
+cartSchema.post<any>(/^findOneAnd/, async function (updateCart) {
+  console.log("😁", updateCart);
+
+  // await this.model.calcTotalPrice(updateCart);
 });
 
 const Cart = mongoose.model<ICartDoc>("Cart", cartSchema);

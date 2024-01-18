@@ -1,6 +1,7 @@
 import { v2 as cloudinary } from "cloudinary";
 import { Request } from "express";
 import { logger } from "../logger/winstonLogger";
+import AppError from "../utils/appError";
 
 export default new (class CloudinaryConfig {
   upload() {
@@ -26,6 +27,19 @@ export default new (class CloudinaryConfig {
       throw new Error("No files uploaded");
     }
     return uploadedFiles;
+  }
+
+  async uploadUserPhoto(image: any) {
+    try {
+      const result = await cloudinary.uploader.upload(image, {
+        resource_type: "auto",
+        folder: "TAN-Store",
+      });
+      return result.secure_url;
+    } catch (error: any) {
+      console.log(error);
+      throw new AppError(error.message, 400);
+    }
   }
 
   async deleteImages(imageURL: string[]) {

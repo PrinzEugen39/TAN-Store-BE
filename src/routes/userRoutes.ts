@@ -25,6 +25,7 @@ userRouter.use(AuthCheck);
 
 userRouter.get("/isauth", getAuth);
 userRouter.get("/me", getMe, getUser);
+userRouter.patch("/updateMe", getMe);
 
 userRouter.use(restrictTo("admin"));
 

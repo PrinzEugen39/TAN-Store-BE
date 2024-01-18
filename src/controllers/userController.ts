@@ -3,6 +3,7 @@ import User from "../models/userModel";
 import catchAsync from "../utils/catchAsync";
 import APIFeatures from "../utils/APIFeatures";
 import AppError from "../utils/appError";
+import cloudinary from "../libs/cloudinary";
 
 export const getAllUsers = catchAsync(async (req: Request, res: Response) => {
   const features = new APIFeatures(User, req.query)
@@ -73,6 +74,21 @@ export const getMe = catchAsync(
   async (req: Request, res: Response, next: NextFunction) => {
     req.params.id = req.user?._id || "";
     next();
+  }
+);
+
+export const updateMe = catchAsync(
+  async (req: Request, res: Response, next: NextFunction) => {
+    if (req.body.password || req.body.passwordConfirm) {
+      return next(
+        new AppError(
+          "This route is not for password updates. Please use /updateMyPassword.",
+          400
+        )
+      );
+    }
+
+    cloudinary.upload();
   }
 );
 

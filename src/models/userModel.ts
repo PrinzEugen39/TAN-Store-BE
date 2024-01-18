@@ -62,6 +62,7 @@ const userSchema = new mongoose.Schema<IUserDocument>(
     },
     avatar: {
       type: String,
+      default: "default.jpg",
     },
     passwordChangedAt: {
       type: Date,
